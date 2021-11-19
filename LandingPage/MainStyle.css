@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Sora", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: visible;
+}
+body {
+  overflow-x: visible;
+  background: #041018;
+}
+/* For Horizontal scroll*/
+
+.home-sidebar-aboutUs-container {
+  position: relative;
+
+  display: flex;
+  overflow-x: visible;
+}
+
+.home-sidebar-aboutUs-container section {
+  height: auto;
+  display: flex;
+  height: 100vh;
+}
+/*Home Section*/
+#Home {
+  min-width: 120%;
+  z-index: -1;
+  /* border: 2px solid red; */
+}
+#Home::before {
+  content: "";
+  background: url("/Images/bgImage.png") no-repeat center / cover;
+  opacity: 0.3;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.sidebar {
+  width: 140px;
+  height: 100%;
+  border-right: 2px solid rgba(255, 255, 255, 0.479);
+  backdrop-filter: blur(8px);
+  padding: 30px 0px;
+  position: fixed;
+}
+.sidebar:hover {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  transition: 0.4s ease-in-out;
+}
+
+.sidebar img {
+  padding-left: 20px;
+  display: inline;
+}
+.sidebarImg {
+  padding-top: 20px;
+}
+.socials {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.socials a {
+  display: block;
+  margin-top: 10px;
+  width: 40px;
+  background: rgba(19, 129, 230, 0.8);
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+}
+.socials a img {
+  display: block;
+  width: 40px;
+  margin-left: -9px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12% 0 0 25%;
+
+  /* margin-left: 150px; */
+}
+.title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 800;
+}
+.blue {
+  color: #2483a1;
+}
+.subTitle {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 8px 0;
+}
+.subTitle2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 120px 0 32px 0;
+}
+.Regbtn {
+  background: #2483a1;
+  color: #fff;
+  font-size: 18px;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  text-decoration: none;
+}
