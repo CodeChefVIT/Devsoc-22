@@ -1,48 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Sora", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+    overflow-x: visible;
 }
+body {
+    overflow-x: visible;
+    background: #041018;
+}
+/* For Horizontal scroll*/
 
-/*Home Section*/
-
-#Home{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+.main-container {
     position: relative;
+
+    display: flex;
+    overflow-x: visible;
 }
-#Home::before{
+
+.main-container section {
+    height: auto;
+    display: flex;
+    height: 100vh;
+}
+/*Home Section*/
+#Home {
+    min-width: 120%;
+    z-index: -1;
+    /* border: 2px solid red; */
+}
+#Home::before {
     content: "";
-    background: url('/Images/DummyBG.png');
-    opacity: 0.2;
+    background: url("/Images/DummyBG.png") no-repeat center / cover;
+    opacity: 0.3;
     background-size: cover;
     position: absolute;
     background-position: center;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
-.sidebar{
-    width: 150px;
-    height: 100%;
-    background: #040D15;
+.sidebar {
+    width: 140px;
+    height: 100vh;
+    border-right: 2px solid rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(8px);
     padding: 30px 0px;
     position: fixed;
+    z-index: 50;
 }
-.sidebar img{
+
+.sidebar img {
     padding-left: 20px;
+    display: inline;
 }
-.sidebarImg{
+.sidebarImg {
     padding-top: 20px;
 }
-.socials{
+.socials {
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -50,7 +71,7 @@ html{
     display: flex;
     flex-direction: column;
 }
-.socials a{
+.socials a {
     display: block;
     margin-top: 10px;
     width: 40px;
@@ -60,60 +81,47 @@ html{
     text-align: center;
     color: #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
-.socials a img{
+.socials a img {
     display: block;
     width: 40px;
     margin-left: -9px;
 }
-.hero{
-    width: 100%;
-    margin-left: 150px;
-    background: #000;
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9% 0 0 25%;
+
+    /* margin-left: 150px; */
 }
-.title{
-    margin-left:29%;
-    margin-top: 10%;
+.title {
     color: #fff;
     font-size: 100px;
     font-weight: 800;
 }
-.blue{
-    color: #2483A1;
+.blue {
+    color: #2483a1;
 }
-.subTitle{
-    color:#FFFFFF;
+.subTitle {
+    color: #ffffff;
     font-size: 48px;
     font-weight: 700;
-    margin-left:25%;
-    margin-top: 4%;
-
+    padding: 8px 0;
 }
-.subTitle2{
-    color:#FFFFFF;
+.subTitle2 {
+    color: #ffffff;
     font-size: 28px;
     font-weight: 600;
-    margin-left:31%;
-    margin-top: 10%;
+    padding: 120px 0 32px 0;
 }
-.Regbtn{
-    margin-left:40%;
-    margin-top: 3%;
-    background: #2483A1;
+.Regbtn {
+    background: #2483a1;
     color: #fff;
     font-size: 18px;
     width: 160px;
     height: 50px;
     border-radius: 10px;
-    cursor: pointer;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
-    outline: none;
-    border: none;
-}
-.Regbtn:hover{
-    background-color: #1c6b83;
-}
-.scrollsvg{
-    margin-left:80%;
 }
