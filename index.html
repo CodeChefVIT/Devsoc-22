@@ -8,13 +8,16 @@
         <link rel="stylesheet" href="./LandingPage/MainStyle.css" />
         <link rel="stylesheet" href="./LandingPage/about.css" />
         <link rel="stylesheet" href="./LandingPage/prizes.css" />
+        <link rel="stylesheet" href="./LandingPage/SpecialPrizes.css" />
+        <link rel="stylesheet" href="./LandingPage/Tracks.css" />
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
         </style>
-        <script src=""></script>
     </head>
     <body>
         <div class="main-container">
+            <!-- Hero -->
+
             <section id="Home">
                 <div class="sidebar">
                     <img
@@ -23,7 +26,10 @@
                         alt="DevsocLogo"
                     />
                     <div class="socials">
-                        <!-- <a href="#"><img src="./Images/Facebook - Negative.svg" alt=""></a> -->
+                        <a
+                            href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            ><img src="./Images/Discord - Negative.svg" alt=""
+                        /></a>
                         <a
                             href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                             ><img src="./Images/Twitter - Negative.svg" alt=""
@@ -40,7 +46,6 @@
                     </div>
                 </div>
                 <div class="hero">
-                    <!-- <div class="title"><img src="./Images/Devsoc’22.png" alt="Title"></div> -->
                     <h1 class="title">Devsoc'<span class="blue">22</span></h1>
                     <p class="subTitle">Developers' Sprint of Code.</p>
                     <p class="subTitle2">
@@ -48,8 +53,15 @@
                         <span class="blue">made</span>
                     </p>
                     <button class="Regbtn">Register</button>
+                    <img
+                        class="scrollsvg"
+                        src="./Images/scroll.svg"
+                        alt="scrollImg"
+                    />
                 </div>
             </section>
+
+            <!-- About Us -->
 
             <section id="About">
                 <div class="about-container">
@@ -78,6 +90,9 @@
                 </div>
             </section>
 
+            <!-- Prizes -->
+            <!-- for highlighter <div class="prize-desc-highlighter"> -->
+
             <section id="Prizes">
                 <div class="prizes-container">
                     <div class="prizes-content-container">
@@ -95,18 +110,18 @@
                             <div class="prize-div">
                                 <img src="./Images/prize-1.png" alt="" />
                                 <div class="prize-desc-div">
-                                    <h1>Second Prize</h1>
+                                    <h1>First Prize</h1>
                                     <span style="display: inline"
-                                        >Rs. 50,000</span
+                                        >Rs. 1,00,000</span
                                     >
                                 </div>
                             </div>
                             <div class="prize-div">
                                 <img src="./Images/prize-3.png" alt="" />
                                 <div class="prize-desc-div">
-                                    <h1>Second Prize</h1>
+                                    <h1>Third Prize</h1>
                                     <span style="display: inline"
-                                        >Rs. 50,000</span
+                                        >Rs. 30,000</span
                                     >
                                 </div>
                             </div>
@@ -115,6 +130,78 @@
                     <!-- ADD ANOTHER ELEMENT HERE, FLEX BOX -->
                 </div>
             </section>
+
+            <!-- Special Prizes -->
+
+            <section id="Prizes">
+                <div class="special-container">
+                    <div class="special-content-container">
+                        <span class="prizes-title">Special Prizes</span>
+                        <div class="special-image-container">
+                            <!-- Row 1 of images for special prizes -->
+                            <div class="special-image-row1-container">
+                                <div class="special-card-container">
+                                    <img
+                                        src="./Images/special-prizes/best-idea.svg"
+                                        alt="best-idea"
+                                    />
+                                    <div class="special-desc-div-front"></div>
+                                    <div class="special-desc-div-back"></div>
+                                </div>
+                                <div class="special-card-container">
+                                    <img
+                                        src="./Images/special-prizes/best-pitch.svg"
+                                        alt="best-pitch"
+                                    />
+                                    <div class="special-desc-div-front"></div>
+                                    <div class="special-desc-div-back"></div>
+                                </div>
+                                <div class="special-card-container">
+                                    <img
+                                        src="./Images/special-prizes/ui-ux.svg"
+                                        alt="best-ui/ux"
+                                    />
+                                    <div class="special-desc-div-front"></div>
+                                    <div class="special-desc-div-back"></div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2 of images for special prizes -->
+
+                            <div class="special-image-row2-container">
+                                <div class="special-card-container">
+                                    <img
+                                        src="./Images/special-prizes/recreational.svg"
+                                        alt="best-recreational"
+                                    />
+                                    <div class="special-desc-div-front"></div>
+                                    <div class="special-desc-div-back"></div>
+                                </div>
+                                <div class="special-card-container">
+                                    <img
+                                        src="./Images/special-prizes/best-freshers.svg"
+                                        alt="best-freshers"
+                                    />
+                                    <div class="special-desc-div-front"></div>
+                                    <div class="special-desc-div-back"></div>
+                                </div>
+                                <div class="special-card-container">
+                                    <img
+                                        src="./Images/special-prizes/girls-team.svg"
+                                        alt="best-girl's team"
+                                    />
+                                    <div class="special-desc-div-front"></div>
+                                    <div class="special-desc-div-back"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <!-- Js scripts -->
+
+        <script src="./LandingPage/App.js"></script>
     </body>
 </html>

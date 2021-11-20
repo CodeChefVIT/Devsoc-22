@@ -9,19 +9,19 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: visible;
 }
 body {
-    overflow-x: visible;
     background: #041018;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 /* For Horizontal scroll*/
 
 .main-container {
     position: relative;
-
+    overflow-x: scroll;
+    overflow-y: hidden;
     display: flex;
-    overflow-x: visible;
 }
 
 .main-container section {
@@ -29,11 +29,30 @@ body {
     display: flex;
     height: 100vh;
 }
+
+/*ScrollBar*/
+
+::-webkit-scrollbar {
+    width: 11px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(19, 129, 230, 0.8);
+}
+
 /*Home Section*/
+
 #Home {
     min-width: 120%;
     z-index: -1;
-    /* border: 2px solid red; */
 }
 #Home::before {
     content: "";
@@ -47,18 +66,20 @@ body {
     z-index: -1;
 }
 .sidebar {
-    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
     height: 100vh;
     border-right: 2px solid rgba(255, 255, 255, 0.479);
     backdrop-filter: blur(8px);
     padding: 30px 0px;
     position: fixed;
-    z-index: 50;
+    z-index: 20;
 }
 
 .sidebar img {
-    padding-left: 20px;
-    display: inline;
+    width: 45%;
 }
 .sidebarImg {
     padding-top: 20px;
@@ -86,14 +107,14 @@ body {
     display: block;
     width: 40px;
     margin-left: -9px;
+    padding-left: 20px;
 }
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 12% 0 0 25%;
-
-    /* margin-left: 150px; */
+    position: relative;
 }
 .title {
     color: #fff;
@@ -123,6 +144,12 @@ body {
     height: 50px;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.scrollsvg {
+    position: absolute;
+    bottom: 100px;
+    right: -60px;
 }
 
 /* @media only screen and (max-width: 1000px) {
