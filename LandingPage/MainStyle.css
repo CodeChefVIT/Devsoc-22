@@ -15,6 +15,7 @@ body {
     overflow-x: visible;
     background: #041018;
     overflow-y: hidden;
+    /* overflow-x: hidden; */
 }
 /* For Horizontal scroll*/
 
@@ -58,7 +59,7 @@ body {
 }
 #Home::before {
     content: "";
-    background: url("/Images/bgImage-min.png") no-repeat center / cover;
+    background: url("/Images/DummyBG.png") no-repeat center / cover;
     opacity: 0.3;
     background-size: cover;
     position: absolute;
