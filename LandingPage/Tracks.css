@@ -1,0 +1,42 @@
+#Tracks{
+    min-width: 120%;
+    z-index: -1;
+}
+.track-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap: 8%;
+}
+.TrackTitle{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+.TrackTitle h1{
+    color: #fff;
+    font-size: 70px;
+    font-family: "Sora", sans-serif;
+    font-weight: 900;
+    position: relative;
+}
+.TrackTitle h1::after {
+    content: "";
+    height: 8px;
+    border-radius: 0px;
+    width: 50%;
+    background-color: #2483a1;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    top: 1.35em;
+}
+.TrackContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
