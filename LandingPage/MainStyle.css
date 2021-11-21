@@ -11,12 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: #041018;
+    background: #111;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 /* For Horizontal scroll*/
-
+/* #particles-js {
+    position: absolute;
+} */
 .main-container {
     position: relative;
     overflow-x: scroll;
@@ -52,7 +54,7 @@ body {
 
 #Home {
     min-width: 120%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 #Home::before {
     content: "";

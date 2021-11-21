@@ -9,23 +9,28 @@
         <link rel="stylesheet" href="./LandingPage/about.css" />
         <link rel="stylesheet" href="./LandingPage/prizes.css" />
         <link rel="stylesheet" href="./LandingPage/SpecialPrizes.css" />
-        <link rel="stylesheet" href="./LandingPage/Tracks.css" />
+        <!-- <link rel="stylesheet" href="./LandingPage/Tracks.css" /> -->
+        <link rel="stylesheet" href="./LandingPage/scroll.css" />
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
         </style>
     </head>
     <body>
+        <div class="cursor">
+            <span class="cursor-text">Scroll to Navigate</span>
+        </div>
+
         <div class="main-container">
             <!-- Hero -->
 
-            <section id="Home">
+            <section id="Home" class="no-cursor">
                 <div class="sidebar">
                     <img
                         class="sidebarImg"
                         src="./Images/devsoc logo 1.png"
                         alt="DevsocLogo"
                     />
-                    <div class="socials">
+                    <div class="socials hover-change">
                         <a
                             href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                             ><img src="./Images/Discord - Negative.svg" alt=""
@@ -52,7 +57,9 @@
                         Coders aren't <span class="blue">born</span>, they're
                         <span class="blue">made</span>
                     </p>
-                    <button class="Regbtn">Register</button>
+                    <button type="button" class="Regbtn hover-change">
+                        Register
+                    </button>
                     <img
                         class="scrollsvg"
                         src="./Images/scroll.svg"
@@ -201,7 +208,24 @@
         </div>
 
         <!-- Js scripts -->
+        <!-- <script
+            type="text/javascript"
+            src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
+        ></script>
+        <script type="text/javascript">
+            options = {
+                cursorOuter: "circle-basic",
+                hoverEffect: "circle-move",
+                hoverItemMove: false,
+                defaultCursor: false,
+                outerWidth: 30,
+                outerHeight: 30,
+                cursor: "none",
+            };
+            magicMouse(options);
+        </script> -->
 
+        <script src="./LandingPage/cursor.js"></script>
         <script src="./LandingPage/App.js"></script>
     </body>
 </html>

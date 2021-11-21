@@ -1,12 +1,11 @@
 #Prizes {
     min-width: 120%;
-    z-index: -2;
+    /* z-index: -2; */
 }
 .prizes-container {
     display: flex;
     gap: 8%;
 }
-
 .prizes-content-container {
     width: 100%;
     display: flex;

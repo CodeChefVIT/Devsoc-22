@@ -1,0 +1,66 @@
+body {
+    cursor: none;
+}
+.cursor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 600;
+    pointer-events: none;
+}
+
+.cursor-text {
+    transform: translateX(8px);
+    width: 80%;
+    font-size: 10px;
+    /* line-height: 190%; */
+    color: white;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.change-cursor {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 0.5px solid white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 600;
+    pointer-events: none;
+}
+
+/* .change-cursor::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 8px solid rgb(6, 117, 190);
+    border-radius: 50%;
+    opacity: 0.5;
+    top: 2px;
+    left: 2px;
+    animation: cursorAnim2 0.5s infinite alternate;
+}
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.6);
+    }
+} */
+.change-text {
+    display: none;
+    transform: translateX(0px);
+    width: 0%;
+    line-height: 0%;
+    color: white;
+    font-weight: 0;
+    opacity: 0;
+}
