@@ -1,0 +1,29 @@
+#Prizes {
+    min-width: 120%;
+    z-index: -2;
+}
+.special-container {
+    width: 100%;
+    padding: 4rem;
+}
+.special-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.special-image-container {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.special-image-row1-container {
+    display: flex;
+    gap: 10rem;
+}
+.special-image-row2-container {
+    display: flex;
+    gap: 5rem;
+}

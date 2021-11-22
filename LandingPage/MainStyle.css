@@ -9,21 +9,19 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: visible;
 }
 body {
-    overflow-x: visible;
     background: #041018;
+    overflow-x: hidden;
     overflow-y: hidden;
-    /* overflow-x: hidden; */
 }
 /* For Horizontal scroll*/
 
 .main-container {
     position: relative;
-
+    overflow-x: scroll;
+    overflow-y: hidden;
     display: flex;
-    overflow-x: visible;
 }
 
 .main-container section {
@@ -42,7 +40,7 @@ body {
 ::-webkit-scrollbar-track {
     border-radius: 5px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
-    background-color: black
+    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -55,11 +53,10 @@ body {
 #Home {
     min-width: 120%;
     z-index: -1;
-    /* border: 2px solid red; */
 }
 #Home::before {
     content: "";
-    background: url("/Images/DummyBG.png") no-repeat center / cover;
+    background: url("/Images/bgImage.png") no-repeat center / cover;
     opacity: 0.3;
     background-size: cover;
     position: absolute;
@@ -69,18 +66,20 @@ body {
     z-index: -1;
 }
 .sidebar {
-    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
     height: 100vh;
     border-right: 2px solid rgba(255, 255, 255, 0.479);
     backdrop-filter: blur(8px);
     padding: 30px 0px;
     position: fixed;
-    z-index: 50;
+    z-index: 20;
 }
 
 .sidebar img {
-    padding-left: 20px;
-    display: inline;
+    width: 45%;
 }
 .sidebarImg {
     padding-top: 20px;
@@ -103,20 +102,19 @@ body {
     text-align: center;
     color: #fff;
     border-radius: 50%;
-    cursor: pointer;
 }
 .socials a img {
     display: block;
     width: 40px;
     margin-left: -9px;
+    padding-left: 20px;
 }
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 9% 0 0 25%;
-
-    /* margin-left: 150px; */
+    margin: 12% 0 0 25%;
+    position: relative;
 }
 .title {
     color: #fff;
@@ -147,7 +145,9 @@ body {
     border-radius: 10px;
     text-decoration: none;
 }
-.scrollsvg{
-    margin-left: 190%;
-   
+
+.scrollsvg {
+    position: absolute;
+    bottom: 100px;
+    right: -60px;
 }
