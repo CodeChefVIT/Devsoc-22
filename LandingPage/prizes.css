@@ -2,6 +2,16 @@
     min-width: 120%;
     /* z-index: -2; */
 }
+
+#Prizes::before {
+    content: "";
+    background: url("https://wallpaperaccess.com/full/1189379.png");
+    opacity: 0.1;
+    position: absolute;
+    min-width: 120%;
+    height: 100%;
+    z-index: -5;
+}
 .prizes-container {
     display: flex;
     gap: 8%;
@@ -42,9 +52,37 @@
     display: flex;
     justify-content: center;
 }
+
 .prize-div {
     width: 80%;
     padding: 0;
+    border-radius: 16px;
+}
+
+.prize-div:nth-child(1):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #878787 100%
+    );
+    transition: 5s;
+}
+.prize-div:nth-child(2):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ffb701 130.59%
+    );
+}
+.prize-div:nth-child(3):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ab6803 100%
+    );
+}
+.prize-div:hover .prize-desc-span {
+    opacity: 1;
 }
 .prize-div h1,
 .prize-div span {

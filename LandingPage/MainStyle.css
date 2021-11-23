@@ -58,12 +58,14 @@ body {
 }
 #Home::before {
     content: "";
-    background: url("/Images/bgImage.png") no-repeat center / cover;
-    opacity: 0.3;
+    /* background: url("/Images/bgImage.png") no-repeat center / cover; */
+    background: url("https://wallpaperaccess.com/full/1189379.png");
+
+    opacity: 0.1;
     background-size: cover;
     position: absolute;
     background-position: center;
-    width: 100%;
+    min-width: 120%;
     height: 100%;
     z-index: -1;
 }
