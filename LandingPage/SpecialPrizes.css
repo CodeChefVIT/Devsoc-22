@@ -97,11 +97,9 @@
 
 .special-card-container img{
     margin-top: 10px;
-    width: 100%;
-    height: 100%;
+    width: 60%;
     object-fit: cover;
     position: absolute;
-    border-radius: 16px;
     top: 0;
     left: 0;
 }
