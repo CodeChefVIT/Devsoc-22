@@ -1,6 +1,16 @@
 #Tracks{
     min-width: 120%;
 }
+#Tracks::before {
+    content: "";
+    background: url("/Images/stars-bg.jpeg");
+    /* background: url("https://wallpaperaccess.com/full/1189379.png"); */
+    opacity: 0.7;
+    position: absolute;
+    min-width: 120%;
+    height: 100%;
+    z-index: -5;
+}
 .track-container {
     display: flex;
     flex-direction: column;
