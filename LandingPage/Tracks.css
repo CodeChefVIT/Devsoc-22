@@ -1,6 +1,5 @@
 #Tracks{
     min-width: 120%;
-    z-index: -2;
 }
 .track-container {
     display: flex;

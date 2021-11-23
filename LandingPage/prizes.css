@@ -1,12 +1,21 @@
 #Prizes {
     min-width: 120%;
-    z-index: -2;
+    /* z-index: -2; */
+}
+
+#Prizes::before {
+    content: "";
+    background: url("https://wallpaperaccess.com/full/1189379.png");
+    opacity: 0.1;
+    position: absolute;
+    min-width: 120%;
+    height: 100%;
+    z-index: -5;
 }
 .prizes-container {
     display: flex;
     gap: 8%;
 }
-
 .prizes-content-container {
     width: 100%;
     display: flex;
@@ -19,7 +28,7 @@
 
 .prizes-title {
     color: #fff;
-    font-size: 96px;
+    font-size: 85px;
     font-family: "Sora", sans-serif;
     font-weight: 900;
     position: relative;
@@ -38,14 +47,45 @@
 }
 
 .prizes-image-container {
-    width: 70%;
+    width: 72%;
     gap: 3rem;
     display: flex;
     justify-content: center;
 }
+
 .prize-div {
     width: 80%;
-    padding: 0;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4.5px 10px wheat;
+}
+
+.prize-div:nth-child(1):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #878787 100%
+    );
+    box-shadow: 0 3px 10px #878787;
+}
+.prize-div:nth-child(2):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ffb701 130.59%
+    );
+    box-shadow: 0 3px 10px #ffb701;
+}
+.prize-div:nth-child(3):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ab6803 100%
+    );
+    box-shadow: 0 3px 10px #ab6803;
+}
+.prize-div:hover .prize-desc-span {
+    opacity: 1;
 }
 .prize-div h1,
 .prize-div span {
@@ -78,4 +118,8 @@
 .prize-desc-div h1,
 .prize-desc-div span {
     color: white;
+}
+
+.secondPrize{
+    margin-right: 50px;
 }

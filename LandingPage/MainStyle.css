@@ -11,12 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: #041018;
+    background: #111;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 /* For Horizontal scroll*/
-
+/* #particles-js {
+    position: absolute;
+} */
 .main-container {
     position: relative;
     overflow-x: scroll;
@@ -52,16 +54,17 @@ body {
 
 #Home {
     min-width: 120%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 #Home::before {
     content: "";
-    background: url("/Images/bgImage.png") no-repeat center / cover;
-    opacity: 0.3;
+    /* background: url("/Images/bgImage.png") no-repeat center / cover; */
+    background: url("https://wallpaperaccess.com/full/1189379.png");
+    opacity: 0.7;
     background-size: cover;
     position: absolute;
     background-position: center;
-    width: 100%;
+    min-width: 120%;
     height: 100%;
     z-index: -1;
 }
@@ -148,6 +151,6 @@ body {
 
 .scrollsvg {
     position: absolute;
-    bottom: 100px;
-    right: -60px;
+    bottom: 60px;
+    right: -350px;
 }
