@@ -13,12 +13,8 @@ html {
 body {
     background: #111;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; 
 }
-/* For Horizontal scroll*/
-/* #particles-js {
-    position: absolute;
-} */
 .main-container {
     position: relative;
     overflow-x: scroll;
