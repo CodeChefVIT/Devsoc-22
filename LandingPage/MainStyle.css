@@ -49,18 +49,17 @@ body {
 /*Home Section*/
 
 #Home {
-    min-width: 120%;
+    min-width: 100%;
     /* z-index: -1; */
 }
 #Home::before {
     content: "";
-    /* background: url("/Images/bgImage.png") no-repeat center / cover; */
-    background: url("https://wallpaperaccess.com/full/1189379.png");
-    opacity: 0.7;
+    background: url("/Images/Background/BgImg-1.png");
+    opacity: 0.6;
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    background-position: center;
-    min-width: 120%;
+    min-width: 100%;
     height: 100%;
     z-index: -1;
 }
@@ -112,12 +111,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12% 0 0 25%;
+    margin: 12% 0 0 29%;
     position: relative;
 }
 .title {
     color: #fff;
-    font-size: 100px;
+    font-size: 120px;
     font-weight: 800;
 }
 .blue {
