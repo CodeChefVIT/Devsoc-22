@@ -53,6 +53,7 @@
     gap: 3rem;
     display: flex;
     justify-content: center;
+    background-color: rgb(20, 20, 20);
 }
 
 .prize-div {
