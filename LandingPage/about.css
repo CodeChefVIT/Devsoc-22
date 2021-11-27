@@ -1,6 +1,18 @@
 #About {
     min-width: 120%;
-    z-index: -2;
+    /* z-index: -2; */
+}
+
+#About::before {
+    content: "";
+    background: url("/Images/Background/BgImg-2.png");
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 120%;
+    height: 100%;
+    z-index: -5;
 }
 .about-container {
     display: flex;
@@ -54,4 +66,6 @@
 .about-image-container img {
     width: 100%;
     align-self: center;
+    opacity: 0.8;
+    z-index: 10;
 }

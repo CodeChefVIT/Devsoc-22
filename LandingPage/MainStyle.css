@@ -11,12 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: #041018;
+    background: #111;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; 
 }
-/* For Horizontal scroll*/
-
 .main-container {
     position: relative;
     overflow-x: scroll;
@@ -51,17 +49,17 @@ body {
 /*Home Section*/
 
 #Home {
-    min-width: 120%;
-    z-index: -1;
+    min-width: 100%;
+    /* z-index: -1; */
 }
 #Home::before {
     content: "";
-    background: url("/Images/bgImage.png") no-repeat center / cover;
-    opacity: 0.3;
+    background: url("/Images/Background/BgImg-1.png");
+    opacity: 0.6;
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    background-position: center;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     z-index: -1;
 }
@@ -113,12 +111,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12% 0 0 25%;
+    margin: 12% 0 0 29%;
     position: relative;
 }
 .title {
     color: #fff;
-    font-size: 100px;
+    font-size: 120px;
     font-weight: 800;
 }
 .blue {
@@ -148,21 +146,6 @@ body {
 
 .scrollsvg {
     position: absolute;
-    bottom: 100px;
-    right: -60px;
+    bottom: 60px;
+    right: -350px;
 }
-
-/* @media only screen and (max-width: 1000px) {
-    .main-container {
-        flex-direction: column;
-    }
-    #Home {
-        min-width: 100%;
-    }
-    #About {
-        min-width: 100%;
-    }
-    #Prizes {
-        min-width: 100%;
-    }
-} */

@@ -1,12 +1,23 @@
 #Prizes {
-    min-width: 120%;
-    z-index: -2;
+    min-width: 100%;
+    /* z-index: -2; */
+}
+
+#Prizes::before {
+    content: "";
+    background: url("/Images/Background/BgImg-4.png");
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    z-index: -5;
 }
 .prizes-container {
     display: flex;
     gap: 8%;
 }
-
 .prizes-content-container {
     width: 100%;
     display: flex;
@@ -19,7 +30,7 @@
 
 .prizes-title {
     color: #fff;
-    font-size: 96px;
+    font-size: 85px;
     font-family: "Sora", sans-serif;
     font-weight: 900;
     position: relative;
@@ -38,14 +49,46 @@
 }
 
 .prizes-image-container {
-    width: 70%;
+    width: 80%;
     gap: 3rem;
     display: flex;
     justify-content: center;
+    background-color: rgb(20, 20, 20);
 }
+
 .prize-div {
     width: 80%;
-    padding: 0;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4.5px 10px wheat;
+}
+
+.prize-div:nth-child(1):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #878787 100%
+    );
+    box-shadow: 0 3px 10px #878787;
+}
+.prize-div:nth-child(2):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ffb701 130.59%
+    );
+    box-shadow: 0 3px 10px #ffb701;
+}
+.prize-div:nth-child(3):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ab6803 100%
+    );
+    box-shadow: 0 3px 10px #ab6803;
+}
+.prize-div:hover .prize-desc-span {
+    opacity: 1;
 }
 .prize-div h1,
 .prize-div span {
@@ -72,7 +115,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    padding: 1.5em 1em 1em 1em;
 }
 
 .prize-desc-div h1,
@@ -80,11 +123,6 @@
     color: white;
 }
 
-/* For highlighter */
-/* .prize-desc-highlighter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-} */
+.secondPrize{
+    margin-right: 50px;
+}

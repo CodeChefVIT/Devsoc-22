@@ -1,117 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DEVSOC'22</title>
-        <link rel="stylesheet" href="./LandingPage/MainStyle.css" />
-        <link rel="stylesheet" href="./LandingPage/about.css" />
-        <link rel="stylesheet" href="./LandingPage/prizes.css" />
-        <link rel="stylesheet" href="./LandingPage/SpecialPrizes.css" />
-        <link rel="stylesheet" href="./LandingPage/Tracks.css" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
-        </style>
-    </head>
-    <body>
-        <div class="main-container">
-            <!-- Hero -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVSOC'22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./LandingPage/MainStyle.css">
+    <link rel="stylesheet" href="./LandingPage/about.css">
+    <link rel="stylesheet" href="./LandingPage/Tracks.css">
+    <link rel="stylesheet" href="./LandingPage/prizes.css" />
+    <link rel="stylesheet" href="./LandingPage/SpecialPrizes.css" />
+    <link rel="stylesheet" href="./LandingPage/scroll.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+    </style>
+</head>
+<body>
+    <div class="cursor">
+        <span class="cursor-text">Scroll to Navigate</span>
+    </div>
 
-            <section id="Home">
-                <div class="sidebar">
-                    <img
-                        class="sidebarImg"
-                        src="./Images/devsoc logo 1.png"
-                        alt="DevsocLogo"
-                    />
-                    <div class="socials">
-                        <a
-                            href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            ><img src="./Images/Discord - Negative.svg" alt=""
-                        /></a>
-                        <a
-                            href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            ><img src="./Images/Twitter - Negative.svg" alt=""
-                        /></a>
-                        <a
-                            href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
-                            ><img src="./Images/LinkedIn - Negative.svg" alt=""
-                        /></a>
-                        <a href="https://www.instagram.com/codechefvit/"
-                            ><img
-                                src="./Images/Instagram - Negative.svg"
-                                alt=""
-                        /></a>
-                    </div>
+    <div class="main-container">
+        <!-- Hero -->
+
+        <section id="Home" class="no-cursor">
+            <div class="sidebar">
+                <img
+                    class="sidebarImg"
+                    src="./Images/devsoc logo 1.png"
+                    alt="DevsocLogo"
+                />
+                <div class="socials hover-change">
+                    <a
+                        href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        ><img src="./Images/Discord - Negative.svg" alt=""
+                    /></a>
+                    <a
+                        href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        ><img src="./Images/Twitter - Negative.svg" alt=""
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
+                        ><img src="./Images/LinkedIn - Negative.svg" alt=""
+                    /></a>
+                    <a href="https://www.instagram.com/codechefvit/"
+                        ><img
+                            src="./Images/Instagram - Negative.svg"
+                            alt=""
+                    /></a>
                 </div>
-                <div class="hero">
-                    <h1 class="title">Devsoc'<span class="blue">22</span></h1>
-                    <p class="subTitle">Developers' Sprint of Code.</p>
-                    <p class="subTitle2">
-                        Coders aren't <span class="blue">born</span>, they're
-                        <span class="blue">made</span>
+            </div>
+            <div class="hero">
+                <h1 class="title">DEVSOC'<span class="blue">22</span></h1>
+                <p class="subTitle">Developers' Sprint of Code.</p>
+                <p class="subTitle2">
+                    Coders aren't <span class="blue">born</span>, they're
+                    <span class="blue">made</span>
+                </p>
+                <button type="button" class="Regbtn hover-change">
+                    Register
+                </button>
+                <img
+                    class="scrollsvg"
+                    src="./Images/scroll.svg"
+                    alt="scrollImg"
+                />
+            </div>
+        </section>
+
+        <!-- About Us -->
+
+        <section id="About" class="hover-change">
+            <div class="about-container">
+                <div class="about-content-container">
+                    <span class="about-title">About Us</span>
+                    <p class="about-content">
+                        DEVSOC is CodeChef-VIT’s annual flagship event
+                        hoping to empower young minds by bringing
+                        enthusiastic technocrats and thinkers under one
+                        roof. This year, the second iteration of the
+                        hackathon is being held with a goal to create a
+                        sprint like event, where participants create, hack,
+                        innovate to solve problems while adhering to the
+                        spirit of creativity and teamwork. The event is
+                        spread over three days, with the hackathon lasting
+                        48 hours consisting of amazing swags, prizes, food
+                        and drinks!
                     </p>
-                    <button class="Regbtn">Register</button>
+                </div>
+                <div class="about-image-container">
                     <img
-                        class="scrollsvg"
-                        src="./Images/scroll.svg"
-                        alt="scrollImg"
+                        src="./Images/AboutUsImg.jpg"
+                        alt="Devsoc-about-png"
                     />
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- About Us -->
+        <!--Our Tracks -->
 
-            <section id="About">
-                <div class="about-container">
-                    <div class="about-content-container">
-                        <span class="about-title">About Us</span>
-                        <p class="about-content">
-                            DEVSOC is CodeChef-VIT’s annual flagship event
-                            hoping to empower young minds by bringing
-                            enthusiastic technocrats and thinkers under one
-                            roof. This year, the second iteration of the
-                            hackathon is being held with a goal to create a
-                            sprint like event, where participants create, hack,
-                            innovate to solve problems while adhering to the
-                            spirit of creativity and teamwork. The event is
-                            spread over three days, with the hackathon lasting
-                            48 hours consisting of amazing swags, prizes, food
-                            and drinks!
-                        </p>
-                    </div>
-                    <div class="about-image-container">
-                        <img
-                            src="./Images/Devsoc-about.png"
-                            alt="Devsoc-about-png"
-                        />
-                    </div>
+        <section id="Tracks" class="hover-change">
+            <div class="track-container container">
+                <div class="TrackTitle text-center">
+                    <h1>Our Tracks</h1>
                 </div>
-            </section>
+                <!-- <div class="TrackContainer">
+                    <div class="trackImg">
+                        <img src="./Images/track1.png" alt="tracksImg">
+                    </div>
+                    <div class="trackImg">
+                        <img src="./Images/track2.png" alt="tracksImg">
+                    </div>
+                    <div class="trackImg">
+                        <img src="./Images/track3.png" alt="tracksImg">
+                    </div>
+                    <div class="trackImg">
+                        <img src="./Images/track4.png" alt="tracksImg">
+                    </div>
+                    <div class="trackImg">
+                        <img src="./Images/track5.png" alt="tracksImg">
+                    </div>
+                    <div class="trackImg">
+                        <img src="./Images/track6.png" alt="tracksImg">
+                    </div>
+                </div> -->
+                <div class="TrackContainer text-center" style="padding: 30px">
+                    <div class="row justify-content-center scrollable">
 
-            <!-- Prizes -->
-            <!-- for highlighter <div class="prize-desc-highlighter"> -->
+                      <div class="col-12 col-sm-6 center-vh" style="padding: 0px; max-width: 270px">
+                        <img class="img-fluid" src="./Images/track1.png" alt="Blockchain">
+                      </div>
 
-            <section id="Prizes">
-                <div class="prizes-container">
+                      <div class="col-12 col-sm-6 center-vh" style="padding: 0px; max-width: 270px">
+                        <img src="./Images/track2.png" alt="AR/VR" class="img-fluid Easter_Egg: CodeChefVIT-Bot">
+                      </div>
+
+                      <div class="col-12 col-sm-6 center-vh" style="padding: 0px; max-width: 270px">
+                        <img class="img-fluid" src="./Images/track3.png" alt="Health &amp; Wellness">
+                      </div>
+
+                      <div class="col-12 col-sm-6 center-vh" style="padding: 0px; max-width: 270px">
+                        <img class="img-fluid" src="./Images/track4.png" alt="Devtools">
+                      </div>
+
+                      <div class="col-12 col-sm-6 center-vh" style="padding: 0px; max-width: 270px">
+                        <img class="img-fluid" src="./Images/track5.png" alt="Social Good">
+                      </div>
+
+                      <div class="col-12 col-sm-6 center-vh" style="padding: 0px; max-width: 270px">
+                        <img class="img-fluid" src="./Images/track6.png" alt="Open Innovation">
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prizes -->
+        <!-- for highlighter <div class="prize-desc-highlighter"> -->
+
+         <section id="Prizes" class="hover-change">
+                <div class="prizes-container container">
                     <div class="prizes-content-container">
                         <span class="prizes-title">Prizes</span>
                         <div class="prizes-image-container">
-                            <div class="prize-div">
+                            <div class="prize-div secondPrize">
                                 <img src="./Images/prize-2.png" alt="" />
                                 <div class="prize-desc-div">
-                                    <h1>Second Prize</h1>
-                                    <span style="display: inline"
-                                        >Rs. 50,000</span
+                                    <h1 class="text-center">Second Prize</h1>
+                                    <span
+                                        class="prize-desc-span"
+                                        style="display: inline"
+                                        >Rs. 75,000</span
                                     >
                                 </div>
                             </div>
-                            <div class="prize-div">
+                            <div class="prize-div secondPrize">
                                 <img src="./Images/prize-1.png" alt="" />
                                 <div class="prize-desc-div">
-                                    <h1>First Prize</h1>
-                                    <span style="display: inline"
+                                    <h1 class="text-center">First Prize</h1>
+                                    <span
+                                        class="prize-desc-span"
+                                        style="display: inline"
                                         >Rs. 1,00,000</span
                                     >
                                 </div>
@@ -119,9 +188,11 @@
                             <div class="prize-div">
                                 <img src="./Images/prize-3.png" alt="" />
                                 <div class="prize-desc-div">
-                                    <h1>Third Prize</h1>
-                                    <span style="display: inline"
-                                        >Rs. 30,000</span
+                                    <h1 class="text-center">Third Prize</h1>
+                                    <span
+                                        class="prize-desc-span"
+                                        style="display: inline"
+                                        >Rs. 50,000</span
                                     >
                                 </div>
                             </div>
@@ -133,65 +204,101 @@
 
             <!-- Special Prizes -->
 
-            <section id="Prizes">
+            <section id="SpecialPrizes" class="hover-change">
                 <div class="special-container">
                     <div class="special-content-container">
-                        <span class="prizes-title">Special Prizes</span>
+                        <span class="prizes-title-special">Special Prizes</span>
                         <div class="special-image-container">
                             <!-- Row 1 of images for special prizes -->
                             <div class="special-image-row1-container">
-                                <div class="special-card-container">
+                                <div class="special-card-container text-center">
                                     <img
-                                        src="./Images/special-prizes/best-idea.svg"
+                                        class="mx-4"
+                                        src="./Images/special-prizes/cc1 1.png"
                                         alt="best-idea"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 15,000</p>
+                                        <p class="special-text">The Best Idea, the one which stands out and rises to be
+                                            the most unique, would be rewarded a cash prize of Rs.
+                                            15,000!</p>
+                                    </div>
                                 </div>
-                                <div class="special-card-container">
+                                <div class="special-card-container text-center">
                                     <img
-                                        src="./Images/special-prizes/best-pitch.svg"
+                                        class="mx-5"
+                                        src="./Images/special-prizes/cc2 1.png"
                                         alt="best-pitch"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 15,000</p>
+                                        <p class="special-text">Pitching is an extremely important task since it conveys
+                                            your idea and tests your persuasion powers. The Best Pitch
+                                            awaits you with a cash prize of Rs. 15,000!</p>
+                                    </div>
+                                    
                                 </div>
-                                <div class="special-card-container">
+                                <div class="special-card-container text-center">
                                     <img
-                                        src="./Images/special-prizes/ui-ux.svg"
+                                        class="mx-5"
+                                        src="./Images/special-prizes/cc3 1.png"
                                         alt="best-ui/ux"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 15,000</p>
+                                        <p class="special-text"> We are eagerly waiting to choose the supreme of all UI/UX
+                                            skills along with cash worth Rs 15,000 for the best
+                                            designer!</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Row 2 of images for special prizes -->
 
                             <div class="special-image-row2-container">
-                                <div class="special-card-container">
+                                <div class="special-card-container text-center">
                                     <img
-                                        src="./Images/special-prizes/recreational.svg"
+                                        class="mx-5 my-5"
+                                        src="./Images/special-prizes/cc4 1.png"
                                         alt="best-recreational"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 10,000</p>
+                                        <p class="special-text">Trouble up your brain
+                                            cells and bring the most entertaining and unique ideas to
+                                            existence. We are looking forward to rewarding your
+                                            insanity with a cash prize of Rs. 10,000!</p>
+                                    </div>
                                 </div>
-                                <div class="special-card-container">
+                                <div class="special-card-container text-center">
                                     <img
-                                        src="./Images/special-prizes/best-freshers.svg"
+                                        class="mx-5 my-4"
+                                        src="./Images/special-prizes/cc5 1.png"
                                         alt="best-freshers"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 10,000</p>
+                                        <p class="special-text">
+                                            To all the passionate beginners, don’t be too worried, we
+                                            got you covered as well. Win over the Best Freshers Team
+                                            title along with a cash prize of Rs. 10,000!
+                                          </p>
+                                    </div>
                                 </div>
-                                <div class="special-card-container">
+                                <div class="special-card-container text-center">
                                     <img
+                                        class="mx-5"
                                         src="./Images/special-prizes/girls-team.svg"
                                         alt="best-girl's team"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 10,000</p>
+                                        <p class="special-text">
+                                            We treasure our techie girls and their upliftment in
+                                            technical fields. Hence, we have a cash prize of Rs 10,000
+                                            in store for the Best Girls Team!
+                                          </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,8 +307,11 @@
             </section>
         </div>
 
-        <!-- Js scripts -->
+    <!-- Js scripts -->
 
-        <script src="./LandingPage/App.js"></script>
-    </body>
+    <script src="./LandingPage/cursor.js"></script>
+    <script src="./LandingPage/App.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
