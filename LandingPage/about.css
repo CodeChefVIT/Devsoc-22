@@ -1,16 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+}
 #About {
     min-width: 120%;
-    /* z-index: -2; */
 }
 
 #About::before {
     content: "";
-    background: url("https://wallpaperaccess.com/full/1189379.png");
-    opacity: 0.1;
+    background: url("/Images/Background/BgImg-2.png");
+    opacity: 0.4;
     position: absolute;
     min-width: 120%;
     height: 100%;
-    z-index: -5;
+    z-index: -1;
 }
 .about-container {
     display: flex;
@@ -25,26 +32,6 @@
     justify-content: center;
 }
 
-.about-title {
-    color: #fff;
-    font-size: 96px;
-    font-family: "Sora", sans-serif;
-    font-weight: 900;
-    position: relative;
-}
-
-.about-title::after {
-    content: "";
-    height: 8px;
-    border-radius: 0px;
-    width: 50%;
-    background-color: #2483a1;
-    position: absolute;
-    bottom: 0;
-    right: 0px;
-    top: 1.2em;
-}
-
 .about-content {
     color: rgba(255, 255, 255, 0.8);
     padding-top: 64px;
@@ -53,6 +40,7 @@
     text-align: center;
     font-weight: 400;
     font-size: 20px;
+    opacity: 1;
 }
 
 .about-image-container {
@@ -63,5 +51,15 @@
 
 .about-image-container img {
     width: 100%;
+    border-radius: 8px;
     align-self: center;
 }
+
+/* @keyframes anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */

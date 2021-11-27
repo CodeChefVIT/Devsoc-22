@@ -1,16 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+}
 #Prizes {
-    min-width: 120%;
-    /* z-index: -2; */
+    min-width: 100%;
 }
 
 #Prizes::before {
     content: "";
-    background: url("https://wallpaperaccess.com/full/1189379.png");
-    opacity: 0.1;
+    background: url("/Images/Background/BgImg-4.png");
     position: absolute;
-    min-width: 120%;
+    opacity: 0.4;
+    min-width: 100%;
     height: 100%;
-    z-index: -5;
+    z-index: -1;
 }
 .prizes-container {
     display: flex;
@@ -25,27 +32,7 @@
     justify-content: center;
     /* padding:2em; */
 }
-
-.prizes-title {
-    color: #fff;
-    font-size: 96px;
-    font-family: "Sora", sans-serif;
-    font-weight: 900;
-    position: relative;
-}
-
-.prizes-title::after {
-    content: "";
-    height: 8px;
-    border-radius: 0px;
-    width: 50%;
-    background-color: #2483a1;
-    position: absolute;
-    bottom: 0;
-    right: 0px;
-    top: 1.2em;
-}
-
+/* 
 .prizes-image-container {
     width: 70%;
     gap: 3rem;
@@ -65,7 +52,6 @@
         rgba(196, 196, 196, 0) 50%,
         #878787 100%
     );
-    transition: 5s;
 }
 .prize-div:nth-child(2):hover {
     background: linear-gradient(
@@ -115,7 +101,7 @@
 .prize-desc-div h1,
 .prize-desc-div span {
     color: white;
-}
+} */
 
 /* For highlighter */
 /* .prize-desc-highlighter {
@@ -124,4 +110,83 @@
     justify-content: center;
     align-items: center;
     padding: 1em;
+} */
+
+.prizes-image-container {
+    width: 80%;
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.prize-div {
+    width: 80%;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px #2483a1;
+    background-color: rgb(20, 20, 20);
+}
+
+.prize-div:nth-child(1):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #878787 100%
+    );
+    box-shadow: 0 0px 10px #878787;
+}
+.prize-div:nth-child(2):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ffb701 130.59%
+    );
+    box-shadow: 0 0px 10px #ffb701;
+}
+.prize-div:nth-child(3):hover {
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #ab6803 100%
+    );
+    box-shadow: 0 0px 10px #ab6803;
+}
+.prize-div:hover .prize-desc-span {
+    opacity: 1;
+}
+.prize-div h1,
+.prize-div span {
+    display: inline;
+}
+
+.prize-div h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.prize-div span {
+    font-size: 1.5em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.prize-div img {
+    width: 100%;
+    align-self: center;
+}
+
+.prize-desc-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25em 0.5em 0.5em 0.5em;
+}
+
+.prize-desc-div h1,
+.prize-desc-div span {
+    color: white;
+}
+
+/* .secondPrize {
+    margin-right: 50px;
 } */

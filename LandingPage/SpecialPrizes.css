@@ -1,21 +1,31 @@
-#Prizes {
-    min-width: 120%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+}
+#SpecialPrizes {
+    min-width: 100%;
     /* z-index: -2; */
 }
 
-#Prizes::before {
+#SpecialPrizes::before {
     content: "";
-    background: url("https://wallpaperaccess.com/full/1189379.png");
-    opacity: 0.1;
+    background: url("/Images/Background/BgImg-5.png");
+    opacity: 0.4;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    min-width: 120%;
+    min-width: 100%;
     height: 100%;
-    z-index: -5;
+    z-index: -1;
 }
 
 .special-container {
     width: 100%;
-    padding: 4rem;
+    padding: 2.5rem;
 }
 .special-content-container {
     width: 100%;
@@ -25,7 +35,7 @@
     align-items: center;
 }
 .special-image-container {
-    padding: 8rem 0;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -36,5 +46,73 @@
 }
 .special-image-row2-container {
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
+}
+.special-card-container {
+    /* background: #111; */
+    width: 250px;
+    height: 225px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0px 8px #2483a1;
+}
+
+.special-card-container::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #2483a1;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #2483a1;
+    border-radius: 8px;
+
+    z-index: 2;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+}
+.special-card-container:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.special-card-container img {
+    margin-top: 10px;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+.special-card-container .special-desc-div-front {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.special-desc-div-front p {
+    text-align: center;
+}
+
+.special-title {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.special-text {
+    opacity: 0.9;
+}
+.special-card-container:hover .special-desc-div-front {
+    opacity: 1;
+    transform: translateY(0px);
 }

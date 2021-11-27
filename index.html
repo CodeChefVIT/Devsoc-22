@@ -5,46 +5,121 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DEVSOC'22</title>
+        <!-- CSS only -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="./LandingPage/MainStyle.css" />
         <link rel="stylesheet" href="./LandingPage/about.css" />
         <link rel="stylesheet" href="./LandingPage/prizes.css" />
         <link rel="stylesheet" href="./LandingPage/SpecialPrizes.css" />
-        <!-- <link rel="stylesheet" href="./LandingPage/Tracks.css" /> -->
+        <link rel="stylesheet" href="./LandingPage/Tracks.css" />
         <link rel="stylesheet" href="./LandingPage/scroll.css" />
+        <!-- <link rel="stylesheet" href="./LandingPage/rarible.css">
+        <link rel="stylesheet" href="./LandingPage/timeline.css"> -->
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
         </style>
+       
     </head>
     <body>
-        <div class="cursor">
-            <span class="cursor-text">Scroll to Navigate</span>
+        <div class="cursor-container">
+            <div class="cursor"></div>
+            <div class="inner-circle"></div>
         </div>
 
         <div class="main-container">
             <!-- Hero -->
 
-            <section id="Home" class="no-cursor">
+            <section id="Home" class="section">
                 <div class="sidebar">
                     <img
                         class="sidebarImg"
                         src="./Images/devsoc logo 1.png"
                         alt="DevsocLogo"
                     />
+                    <div class="vertical-menu-icon-container hover-change">
+                        <div class="vertical-menu-icon bar-1"></div>
+                        <div class="vertical-menu-icon bar-2"></div>
+                        <div class="vertical-menu-icon bar-3"></div>
+                    </div>
+
+                    <div class="sidebar-sections-container">
+                        <!-- <div class="sidebar-sections-li-div"></div> -->
+                        <ul>
+                            <li class="sidebar-sections-li hover-change">
+                                <a class="sidebar-sections-span" href="#Home"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a class="sidebar-sections-span" href="#About"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a class="sidebar-sections-span" href="#Tracks"
+                                    >Our Tracks</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a class="sidebar-sections-span" href="#Prizes"
+                                    >Prizes</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a
+                                    class="sidebar-sections-span"
+                                    href="#SpecialPrizes"
+                                    >Special Prizes</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a
+                                    class="sidebar-sections-span"
+                                    href="#RaribleTracks"
+                                    >Rarible Tracks</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a
+                                    class="sidebar-sections-span"
+                                    href="#TimeLine"
+                                    >TimeLine</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a
+                                    class="sidebar-sections-span"
+                                    href="#Sponsors"
+                                    >Sponsors</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a class="sidebar-sections-span" href="#FAQs"
+                                    >FAQs</a
+                                >
+                            </li>
+                            <li class="sidebar-sections-li hover-change">
+                                <a class="sidebar-sections-span" href="#Contact"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="socials hover-change">
-                        <a
-                            href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        <a href="#""
                             ><img src="./Images/Discord - Negative.svg" alt=""
                         /></a>
                         <a
                             href="https://twitter.com/codechefvit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            ><img src="./Images/Twitter - Negative.svg" alt=""
+                            target="_blank" ><img src="./Images/Twitter - Negative.svg" alt=""
                         /></a>
                         <a
                             href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
-                            ><img src="./Images/LinkedIn - Negative.svg" alt=""
+                            target="_blank" ><img src="./Images/LinkedIn - Negative.svg" alt=""
                         /></a>
                         <a href="https://www.instagram.com/codechefvit/"
-                            ><img
+                            target="_blank" ><img
                                 src="./Images/Instagram - Negative.svg"
                                 alt=""
                         /></a>
@@ -70,11 +145,13 @@
 
             <!-- About Us -->
 
-            <section id="About" class="hover-change">
+            <section id="About" class="section">
                 <div class="about-container">
                     <div class="about-content-container">
-                        <span class="about-title">About Us</span>
-                        <p class="about-content">
+                        <span class="section-title anim1" data-delay="0s"
+                            >About Us</span
+                        >
+                        <p class="about-content anim1" data-delay="0.4s">
                             DEVSOC is CodeChef-VIT’s annual flagship event
                             hoping to empower young minds by bringing
                             enthusiastic technocrats and thinkers under one
@@ -90,20 +167,46 @@
                     </div>
                     <div class="about-image-container">
                         <img
-                            src="./Images/Devsoc-about.png"
+                            src="./Images/AboutUsImg.jpg"
                             alt="Devsoc-about-png"
                         />
                     </div>
                 </div>
             </section>
 
+              <!--Our Tracks -->
+
+            <section id="Tracks" class="section">
+                <div class="tracks-container">
+                    <div class="tracks-content-container">
+                        <span class="section-title anim1" data-delay="0.1s">Tracks</span>
+                        <div class="tracks-image-container">
+                            <!-- Row 1 of images for special prizes -->
+                            <div class="tracks-image-row1-container">
+                                <img src="./Images/track3.png" alt="">
+                                <img src="./Images/track2.png" alt="">
+                                <img src="./Images/track1.png" alt="">
+                            </div>
+                            <div class="tracks-image-row2-container">
+                                <img src="./Images/track4.png" alt="">
+                                <img src="./Images/track5.png" alt="">
+                                <img src="./Images/track6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             <!-- Prizes -->
             <!-- for highlighter <div class="prize-desc-highlighter"> -->
 
-            <section id="Prizes" class="hover-change">
+            <section id="Prizes" class="section">
                 <div class="prizes-container">
                     <div class="prizes-content-container">
-                        <span class="prizes-title">Prizes</span>
+                        <span class="section-title anim1" data-delay="0.1s"
+                            >Prizes</span
+                        >
                         <div class="prizes-image-container">
                             <div class="prize-div">
                                 <img src="./Images/prize-2.png" alt="" />
@@ -146,36 +249,52 @@
 
             <!-- Special Prizes -->
 
-            <section id="Prizes" class="hover-change">
+            <section id="SpecialPrizes" class="section">
                 <div class="special-container">
                     <div class="special-content-container">
-                        <span class="prizes-title">Special Prizes</span>
+                        <span class="section-title anim1" data-delay="0.1s">Special Prizes</span>
                         <div class="special-image-container">
                             <!-- Row 1 of images for special prizes -->
                             <div class="special-image-row1-container">
                                 <div class="special-card-container">
-                                    <img
-                                        src="./Images/special-prizes/best-idea.svg"
-                                        alt="best-idea"
-                                    />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                   
+                                        <img
+                                        src="./Images/special-prizes/cc1.png"
+                                        alt="best-idea">
+                                   
+                                        <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 15,000</p>
+                                        <p class="special-text">The Best Idea, the one which stands out and rises to be
+                                            the most unique, would be rewarded a cash prize of Rs.
+                                            15,000!</p>
+                                    </div>
                                 </div>
                                 <div class="special-card-container">
                                     <img
-                                        src="./Images/special-prizes/best-pitch.svg"
+                                 
+                                        src="./Images/special-prizes/cc2.png"
                                         alt="best-pitch"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 15,000</p>
+                                        <p class="special-text">Pitching is an extremely important task since it conveys
+                                            your idea and tests your persuasion powers. The Best Pitch
+                                            awaits you with a cash prize of Rs. 15,000!</p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="special-card-container">
                                     <img
-                                        src="./Images/special-prizes/ui-ux.svg"
+                                  
+                                        src="./Images/special-prizes/cc3.png"
                                         alt="best-ui/ux"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 15,000</p>
+                                        <p class="special-text"> We are eagerly waiting to choose the supreme of all UI/UX
+                                            skills along with cash worth Rs 15,000 for the best
+                                            designer!</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -184,54 +303,100 @@
                             <div class="special-image-row2-container">
                                 <div class="special-card-container">
                                     <img
-                                        src="./Images/special-prizes/recreational.svg"
+            
+                                        src="./Images/special-prizes/cc4.png"
                                         alt="best-recreational"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 10,000</p>
+                                        <p class="special-text">Trouble up your brain
+                                            cells and bring the most entertaining and unique ideas to
+                                            existence. We are looking forward to rewarding your
+                                            insanity with a cash prize of Rs. 10,000!</p>
+                                    </div>
                                 </div>
                                 <div class="special-card-container">
                                     <img
-                                        src="./Images/special-prizes/best-freshers.svg"
+                                   
+                                        src="./Images/special-prizes/cc5.png"
                                         alt="best-freshers"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 10,000</p>
+                                        <p class="special-text">
+                                            To all the passionate beginners, don’t be too worried, we
+                                            got you covered as well. Win over the Best Freshers Team
+                                            title along with a cash prize of Rs. 10,000!
+                                          </p>
+                                    </div>
                                 </div>
                                 <div class="special-card-container">
                                     <img
-                                        src="./Images/special-prizes/girls-team.svg"
+                                      
+                                        src="./Images/special-prizes/cc6.png"
                                         alt="best-girl's team"
                                     />
-                                    <div class="special-desc-div-front"></div>
-                                    <div class="special-desc-div-back"></div>
+                                    <div class="special-desc-div-front">
+                                        <p class="special-title">&#8377; 10,000</p>
+                                        <p class="special-text">
+                                            We treasure our techie girls and their upliftment in
+                                            technical fields. Hence, we have a cash prize of Rs 10,000
+                                            in store for the Best Girls Team!
+                                          </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+         
+         
+            <!--Rarible-->
 
+            <!-- <section id="Rarible" class="section">
+                <div class="rarible-container">
+                    <div class="rarible-content-container">
+                        <span class="section-title anim1" data-delay="0.1s">Rarible Tracks</span>
+                        <div class="rarible-image-container">
+                           
+                            <div class="rarible-image-row1-container">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+            <!--Timeline-->
+
+            <!-- <section id="Timeline" class="section">
+                <div class="timeline-container">
+                    <div class="timeline-content-container">
+                        <span class="section-title anim1" data-delay="0.1s">Timeline</span>
+                        <div class="timeline-image-container">
+                            
+                            <div class="timeline-image-row1-container">
+                                <img src="" alt="">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </section> -->
+       
+        </div>
+      
+      
+      
+      
         <!-- Js scripts -->
-        <!-- <script
-            type="text/javascript"
-            src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
-        ></script>
-        <script type="text/javascript">
-            options = {
-                cursorOuter: "circle-basic",
-                hoverEffect: "circle-move",
-                hoverItemMove: false,
-                defaultCursor: false,
-                outerWidth: 30,
-                outerHeight: 30,
-                cursor: "none",
-            };
-            magicMouse(options);
-        </script> -->
+        
 
         <script src="./LandingPage/cursor.js"></script>
         <script src="./LandingPage/App.js"></script>
+        <script src="./LandingPage/sidebar.js"></script>
     </body>
 </html>

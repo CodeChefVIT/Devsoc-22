@@ -1,0 +1,45 @@
+#Tracks {
+    min-width: 100%;
+}
+#Tracks::before {
+    content: "";
+    background: url("/Images/Background/BgImg-3.png");
+    opacity: 0.4;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.tracks-container {
+    width: 100%;
+    padding: 2.5rem;
+}
+.tracks-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracks-image-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+}
+
+.tracks-image-container img {
+    width: 18%;
+    display: inline;
+}
+
+.tracks-image-row1-container,
+.tracks-image-row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8rem; */
+}
