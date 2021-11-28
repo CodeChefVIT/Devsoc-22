@@ -165,9 +165,10 @@
 }
 
 .prize-div span {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 500;
     opacity: 0.5;
+    padding: 0.5em 0;
 }
 .prize-div img {
     width: 100%;

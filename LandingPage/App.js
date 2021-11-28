@@ -1,6 +1,11 @@
 const scrollConatiner = document.querySelector(".main-container");
+// const ImageContainer = document.querySelector(".faq-image-container");
+// const ImageRowContainer = document.querySelector(".faq-image-row-container");
+// const RowText = document.querySelector(".faq-desc-text");
 
 scrollConatiner.addEventListener("wheel", (e) => {
+    // console.log(e.path[0]);
+    // let arrayWheel = e.path[0];
     e.preventDefault();
     scrollConatiner.scrollLeft += e.deltaY;
 });

@@ -1,0 +1,52 @@
+#FAQs {
+    min-width: 100%;
+}
+#FAQs::before {
+    content: "";
+    background: url("/Images/Background/BgImg-7.png");
+    opacity: 0.4;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.faq-container {
+    width: 100%;
+    padding: 2.5rem;
+}
+.faq-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-image-container {
+    overflow-y: scroll;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0.5em;
+    gap: 1rem;
+}
+
+.faq-image-row-container {
+    border: 1px solid #2483a1;
+    border-radius: 8px;
+    width: 80%;
+    padding: 1em;
+    display: flex;
+}
+
+.faq-image-container span {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 1em;
+}

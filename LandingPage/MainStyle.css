@@ -237,7 +237,7 @@ body {
     font-weight: 800;
 }
 .blue {
-    color: #2483a1;
+    color: rgba(19, 129, 230, 0.8);
 }
 .subTitle {
     color: #ffffff;
@@ -266,7 +266,7 @@ body {
 }
 
 .Regbtn:hover {
-    background-color: #2483a1;
+    background-color: rgba(19, 129, 230, 0.8);
     border: none;
     font-size: 16px;
 }

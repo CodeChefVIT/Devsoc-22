@@ -1,9 +1,9 @@
-#Timeline {
+#TimeLine {
     min-width: 100%;
 }
-#Timeline::before {
+#TimeLine::before {
     content: "";
-    background: url("/Images/Background/BgImg-3.png");
+    background: url("/Images/Background/BgImg-6.png");
     opacity: 0.4;
     position: absolute;
     background-size: cover;
@@ -34,6 +34,15 @@
 .timeline-image-container img {
     width: 18%;
     display: inline;
+}
+
+.timeline-image-container p {
+    color: #2483a1;
+    font-style: italic;
+    text-shadow: 2px 2px 0px #065c77;
+
+    margin-top: 3em;
+    font-size: 3em;
 }
 
 .timeline-image-row1-container,

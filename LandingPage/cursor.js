@@ -1,8 +1,6 @@
 const mouseCursor = document.querySelector(".cursor");
 const mouseCursorInnerCircle = document.querySelector(".inner-circle");
-
 const hoverChange = document.querySelectorAll(".hover-change");
-const mouseCursorText = document.querySelector(".cursor-text");
 const RegBtn = document.querySelector(".Regbtn");
 
 document.addEventListener("mousemove", (e) => {

@@ -1,0 +1,76 @@
+#Contact {
+    min-width: 100%;
+}
+#Contact::before {
+    content: "";
+    background: url("/Images/Background/BgImg-6.png");
+    opacity: 0.4;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-container {
+    width: 100%;
+    padding: 2.5rem;
+}
+.contact-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.contact-image-row1-container,
+.contact-image-row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-image-row1-container,
+.contact-image-row2-container {
+    gap: 8rem;
+}
+
+.contact-image-row1-container img {
+    width: 56px;
+}
+
+.contact-image-row1-container img:hover {
+    filter: invert(41%) sepia(93%) saturate(349%) hue-rotate(148deg)
+        brightness(89%) contrast(96%);
+}
+
+.contact-image-row2-container h1 {
+    color: #2483a1;
+}
+.contact-image-row2-container span {
+    color: white;
+    padding-bottom: 0.2em;
+}
+.contact-image-row2-container h1 {
+    padding-bottom: 1em;
+}
+
+.contact-desc-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-desc-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
