@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,41 @@
     list-style: none;
     text-decoration: none;
     font-family: "Sora", sans-serif;
+=======
+#SpecialPrizes {
+    min-width: 100%;
+    /* z-index: -2; */
+}
+
+#SpecialPrizes::before {
+    content: "";
+    background: url("/Images/Background/BgImg-5.png");
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+.prizes-title-special{
+    color: #fff;
+    font-size: 70px;
+    font-family: "Sora", sans-serif;
+    font-weight: 800;
+    position: relative;
+}
+.prizes-title-special::after {
+    content: "";
+    height: 8px;
+    border-radius: 0px;
+    width: 50%;
+    background-color: #2483a1;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    top: 1.2em;
+>>>>>>> upstream/master
 }
 #SpecialPrizes {
     min-width: 100%;
@@ -48,13 +84,18 @@
     display: flex;
     gap: 10rem;
 }
+<<<<<<< HEAD
 .special-card-container {
+=======
+.special-card-container{
+>>>>>>> upstream/master
     /* background: #111; */
     width: 250px;
     height: 225px;
     border-radius: 16px;
     position: relative;
     display: flex;
+<<<<<<< HEAD
 
     align-items: center;
     justify-content: center;
@@ -74,21 +115,59 @@
     background: #2483a1;
     border-radius: 8px;
 
+=======
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 4.5px 10px wheat;
+}
+.special-card-container:hover{
+    background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 50%,
+        #2483a1 100%
+    );
+    box-shadow: 0 6px 10px gold;
+}
+.special-card-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(7, 95, 176, 0.8) 0%, #0C2943 100%);
+>>>>>>> upstream/master
     z-index: 2;
     transition: all 0.8s ease-in-out;
     opacity: 0;
 }
+<<<<<<< HEAD
 .special-card-container:hover::before {
+=======
+.special-card-container:hover::before{
+>>>>>>> upstream/master
     width: 100%;
     height: 100%;
     opacity: 1;
 }
 
+<<<<<<< HEAD
 .special-card-container img {
     margin-top: 10px;
     width: 50%;
     object-fit: cover;
     position: absolute;
+=======
+.special-card-container img{
+    margin-top: 10px;
+    width: 60%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+>>>>>>> upstream/master
 }
 .special-card-container .special-desc-div-front {
     position: relative;
@@ -99,6 +178,7 @@
     transition: 0.5s all;
 }
 
+<<<<<<< HEAD
 .special-desc-div-front p {
     text-align: center;
 }
@@ -112,6 +192,8 @@
 .special-text {
     opacity: 0.9;
 }
+=======
+>>>>>>> upstream/master
 .special-card-container:hover .special-desc-div-front {
     opacity: 1;
     transform: translateY(0px);

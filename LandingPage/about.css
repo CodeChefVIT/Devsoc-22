@@ -8,16 +8,30 @@
 }
 #About {
     min-width: 120%;
+<<<<<<< HEAD
+=======
+    /* z-index: -2; */
+>>>>>>> upstream/master
 }
 
 #About::before {
     content: "";
     background: url("/Images/Background/BgImg-2.png");
+<<<<<<< HEAD
     opacity: 0.4;
     position: absolute;
     min-width: 120%;
     height: 100%;
     z-index: -1;
+=======
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 120%;
+    height: 100%;
+    z-index: -5;
+>>>>>>> upstream/master
 }
 .about-container {
     display: flex;
@@ -53,6 +67,8 @@
     width: 100%;
     border-radius: 8px;
     align-self: center;
+    opacity: 0.8;
+    z-index: 10;
 }
 
 /* @keyframes anim {

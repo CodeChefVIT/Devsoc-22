@@ -10,11 +10,18 @@ html {
     scroll-behavior: smooth;
 }
 body {
+<<<<<<< HEAD
     background: #000;
+=======
+    background: #111;
+>>>>>>> upstream/master
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 .main-container {
     position: relative;
     overflow-x: scroll;
@@ -75,12 +82,21 @@ body {
 
 #Home {
     min-width: 100%;
+<<<<<<< HEAD
+=======
+    /* z-index: -1; */
+>>>>>>> upstream/master
 }
 #Home::before {
     content: "";
     background: url("/Images/Background/BgImg-1.png");
+<<<<<<< HEAD
     opacity: 0.4;
+=======
+    opacity: 0.6;
+>>>>>>> upstream/master
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     min-width: 100%;
     height: 100%;
@@ -228,12 +244,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12% 0 0 25%;
+    margin: 12% 0 0 29%;
     position: relative;
 }
 .title {
     color: #fff;
+<<<<<<< HEAD
     font-size: 144px;
+=======
+    font-size: 120px;
+>>>>>>> upstream/master
     font-weight: 800;
 }
 .blue {
@@ -273,21 +293,6 @@ body {
 
 .scrollsvg {
     position: absolute;
-    bottom: 100px;
-    right: -60px;
+    bottom: 60px;
+    right: -350px;
 }
-
-/* @media only screen and (max-width: 1000px) {
-    .main-container {
-        flex-direction: column;
-    }
-    #Home {
-        min-width: 100%;
-    }
-    #About {
-        min-width: 100%;
-    }
-    #Prizes {
-        min-width: 100%;
-    }
-} */
