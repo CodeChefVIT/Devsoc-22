@@ -61,17 +61,17 @@
     transition: 0.5s ease-in-out;
     border: 0;
     outline: 0;
-    box-shadow: 0 0px 8px #2483a1;
+    box-shadow: 0 0px 8px #1579d6;
 }
 
 .special-card-container::before {
     content: "";
     position: absolute;
-    border: 2px solid #2483a1;
+    border: 2px solid #1579d6;
     top: 0;
     left: 0;
     display: block;
-    background: #2483a1;
+    background: #1579d6;
     border-radius: 8px;
 
     z-index: 2;

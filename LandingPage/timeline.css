@@ -37,9 +37,9 @@
 }
 
 .timeline-image-container p {
-    color: #2483a1;
+    color: #1579d6;
     font-style: italic;
-    text-shadow: 2px 2px 0px #065c77;
+    text-shadow: 2px 2px 0px rgb(3, 76, 98);
 
     margin-top: 3em;
     font-size: 3em;

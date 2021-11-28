@@ -64,7 +64,7 @@ body {
     border-radius: 0px;
     width: 50%;
     /* background-color: #2483a1; */
-    background: #65c3e9;
+    background: #1579d6;
     position: absolute;
     bottom: 0;
     right: 0px;
@@ -157,10 +157,10 @@ body {
 }
 
 .sidebar-change {
-    width: 1000px;
+    width: 900px;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    border-right: 1px solid #2483a1;
+    border-right: 1px solid #1579d6;
 }
 
 .sidebar-sections-container {
@@ -188,7 +188,7 @@ body {
 
 .sidebar-sections-span-change {
     color: rgb(255, 255, 255);
-    background-color: #2483a1;
+    background-color: #1579d6;
 }
 
 /* Socials in sidebar  */
@@ -221,7 +221,7 @@ body {
 }
 
 .socials a:hover {
-    background-color: rgba(19, 129, 230, 0.8);
+    background-color: #1579d6;
     opacity: 1;
 }
 .hero {
@@ -237,7 +237,7 @@ body {
     font-weight: 800;
 }
 .blue {
-    color: rgba(19, 129, 230, 0.8);
+    color: #1579d6;
 }
 .subTitle {
     color: #ffffff;
@@ -266,7 +266,7 @@ body {
 }
 
 .Regbtn:hover {
-    background-color: rgba(19, 129, 230, 0.8);
+    background-color: #1579d6;
     border: none;
     font-size: 16px;
 }
