@@ -8,30 +8,16 @@
 }
 #Prizes {
     min-width: 100%;
-<<<<<<< HEAD
-=======
-    /* z-index: -2; */
->>>>>>> upstream/master
 }
 
 #Prizes::before {
     content: "";
     background: url("/Images/Background/BgImg-4.png");
-<<<<<<< HEAD
     position: absolute;
     opacity: 0.4;
     min-width: 100%;
     height: 100%;
     z-index: -1;
-=======
-    opacity: 0.6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    min-width: 100%;
-    height: 100%;
-    z-index: -5;
->>>>>>> upstream/master
 }
 .prizes-container {
     display: flex;
@@ -46,49 +32,18 @@
     justify-content: center;
     /* padding:2em; */
 }
-<<<<<<< HEAD
 /* 
-=======
-
-.prizes-title {
-    color: #fff;
-    font-size: 85px;
-    font-family: "Sora", sans-serif;
-    font-weight: 900;
-    position: relative;
-}
-
-.prizes-title::after {
-    content: "";
-    height: 8px;
-    border-radius: 0px;
-    width: 50%;
-    background-color: #2483a1;
-    position: absolute;
-    bottom: 0;
-    right: 0px;
-    top: 1.2em;
-}
-
->>>>>>> upstream/master
 .prizes-image-container {
-    width: 80%;
+    width: 70%;
     gap: 3rem;
     display: flex;
     justify-content: center;
-    background-color: rgb(20, 20, 20);
 }
 
 .prize-div {
     width: 80%;
-<<<<<<< HEAD
     padding: 0;
     border-radius: 16px;
-=======
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4.5px 10px wheat;
->>>>>>> upstream/master
 }
 
 .prize-div:nth-child(1):hover {
@@ -97,10 +52,6 @@
         rgba(196, 196, 196, 0) 50%,
         #878787 100%
     );
-<<<<<<< HEAD
-=======
-    box-shadow: 0 3px 10px #878787;
->>>>>>> upstream/master
 }
 .prize-div:nth-child(2):hover {
     background: linear-gradient(
@@ -108,10 +59,6 @@
         rgba(196, 196, 196, 0) 50%,
         #ffb701 130.59%
     );
-<<<<<<< HEAD
-=======
-    box-shadow: 0 3px 10px #ffb701;
->>>>>>> upstream/master
 }
 .prize-div:nth-child(3):hover {
     background: linear-gradient(
@@ -119,10 +66,6 @@
         rgba(196, 196, 196, 0) 50%,
         #ab6803 100%
     );
-<<<<<<< HEAD
-=======
-    box-shadow: 0 3px 10px #ab6803;
->>>>>>> upstream/master
 }
 .prize-div:hover .prize-desc-span {
     opacity: 1;
@@ -152,7 +95,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 1.5em 1em 1em 1em;
+    padding: 1em;
 }
 
 .prize-desc-div h1,
@@ -160,7 +103,6 @@
     color: white;
 } */
 
-<<<<<<< HEAD
 /* For highlighter */
 /* .prize-desc-highlighter {
     display: flex;
@@ -248,8 +190,3 @@
 /* .secondPrize {
     margin-right: 50px;
 } */
-=======
-.secondPrize{
-    margin-right: 50px;
-}
->>>>>>> upstream/master
