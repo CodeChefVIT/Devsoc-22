@@ -1,0 +1,45 @@
+#Rarible {
+    min-width: 100%;
+}
+#Rarible::before {
+    content: "";
+    background: url("/Images/Background/BgImg-6.png");
+    opacity: 0.4;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.rarible-container {
+    width: 100%;
+    padding: 2.5rem;
+}
+.rarible-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.rarible-image-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+}
+
+.rarible-image-container img {
+    width: 18%;
+    display: inline;
+}
+
+.rarible-image-row1-container,
+.rarible-image-row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8rem; */
+}

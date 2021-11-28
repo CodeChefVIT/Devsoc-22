@@ -1,31 +1,46 @@
 const mouseCursor = document.querySelector(".cursor");
+const mouseCursorInnerCircle = document.querySelector(".inner-circle");
 const hoverChange = document.querySelectorAll(".hover-change");
-const mouseCursorText = document.querySelector(".cursor-text");
 const RegBtn = document.querySelector(".Regbtn");
 
-// const mainContainer = document.querySelector(".main-container");
 document.addEventListener("mousemove", (e) => {
     mouseCursor.setAttribute(
         "style",
-        "top : " + (e.pageY - 20) + "px; left :" + (e.pageX - 20) + "px;"
+        "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+    );
+});
+document.addEventListener("mousemove", (e) => {
+    mouseCursorInnerCircle.setAttribute(
+        "style",
+        "top: " + e.pageY + "px; left: " + e.pageX + "px;"
     );
 });
 
 hoverChange.forEach((item) => {
     item.addEventListener("mouseover", () => {
-        mouseCursor.classList.add("change-cursor");
-        mouseCursorText.classList.add("change-text");
+        mouseCursor.classList.add("cursor-change");
+        mouseCursorInnerCircle.classList.add("inner-circle-change");
         mouseCursor.classList.remove("cursor");
-        mouseCursorText.classList.remove("cursor-text");
+        mouseCursorInnerCircle.classList.remove("inner-circle");
     });
 });
 hoverChange.forEach((item) => {
     item.addEventListener("mouseleave", () => {
-        mouseCursor.classList.remove("change-cursor");
-        mouseCursorText.classList.remove("change-text");
+        mouseCursor.classList.remove("cursor-change");
+        mouseCursorInnerCircle.classList.remove("inner-circle-change");
         mouseCursor.classList.add("cursor");
-        mouseCursorText.classList.add("cursor-text");
+        mouseCursorInnerCircle.classList.add("inner-circle");
     });
 });
 
-socials;
+// For animatin screens to another section
+// options = { rootMargin: "0px", threshold: "0" };
+
+// const home = document.querySelector("#About");
+
+// observer = new IntersectionObserver((entries) => {
+//     console.log(entries);
+//     window.scrollto(1000, 0);
+// }, options);
+
+// observer.observe(home);
