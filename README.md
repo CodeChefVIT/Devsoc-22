@@ -8,39 +8,47 @@
 
 ---
 
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE)
+[![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
 [![GitHub Super-Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## Features
-- Insert list of features here
+
+-   Insert list of features here
 
 ## Screenshots
+
 <p align="center">
 <img src="https://i.ibb.co/VppxmWZ/cet.png" alt="Common-Entry-Test" width="400px"/>
 </p>
 
-
 ## Dependencies
- - < dependency >
- - < dependency >
+
+-   < dependency >
+-   < dependency >
+
 ## Instructions
 
 #### Directions to Install
+
 ```sh
 $ git clone https://github.com/CodeChefVIT/<Project>
 $ cd <Project>
 $ yarn install
 ```
+
 #### Directions to Run
+
 ```bash
 $ yarn serve
 ```
+
 ## Contributors
+
 <table>
 	<tr align="center" style="font-weight:bold">
 		<td>
-		John Doe
+		Nitish Kumar Bansal
 		<p align="center">
 			<img src = "https://i.ibb.co/4J9LXxS/cclogo.png" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
 		</p>
@@ -54,6 +62,7 @@ $ yarn serve
 </table>
 
 ## License
+
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 <p align="center">

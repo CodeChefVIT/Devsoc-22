@@ -21,7 +21,7 @@ menuIcon.addEventListener("click", (e) => {
 });
 section.forEach((item) => {
     item.addEventListener("click", (e) => {
-        let screenWidth = (50 / 100) * window.screen.width;
+        let screenWidth = (85 / 100) * window.screen.width;
         if (e.clientX > screenWidth) {
             menuIconBar1.classList.toggle("bar-1-change");
             menuIconBar2.classList.toggle("bar-2-change");

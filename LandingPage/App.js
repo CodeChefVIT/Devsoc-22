@@ -4,20 +4,21 @@ const scrollConatiner = document.querySelector(".main-container");
 // const RowText = document.querySelector(".faq-desc-text");
 
 scrollConatiner.addEventListener("wheel", (e) => {
-    // console.log(e.path[0]);
-    // let arrayWheel = e.path[0];
     e.preventDefault();
-    scrollConatiner.scrollLeft += e.deltaY;
+    let screenWidth = window.screen.width;
+    if (screenWidth > 1000) {
+        scrollConatiner.scrollLeft += e.deltaY;
+    }
 });
 
 // On scroll animations
-const targets = document.querySelectorAll(".anim1");
+// const targets = document.querySelectorAll(".anim1");
 
-options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 1,
-};
+// options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 1,
+// };
 
 // observer = new IntersectionObserver((entries) => {
 //     // console.log(entries);
