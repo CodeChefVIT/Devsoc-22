@@ -50,10 +50,10 @@ $ yarn serve
 		<td>
 		Nitish Kumar Bansal
 		<p align="center">
-			<img src = "https://i.ibb.co/4J9LXxS/cclogo.png" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
+			<img src = "https://photos.app.goo.gl/2SouKca5A96WFa3j8" width="150" height="150" alt="Nitish Kumar Bansal">
 		</p>
 			<p align="center">
-				<a href = "https://github.com/<GitHub-username>">
+				<a href = "https://github.com/nitishbansal32">
 					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
 				</a>
 			</p>
