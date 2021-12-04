@@ -19,10 +19,11 @@ menuIcon.addEventListener("click", (e) => {
         sidebarMenu.classList.toggle("sidebar-sections-container-change");
     }, 200);
 });
+
 section.forEach((item) => {
     item.addEventListener("click", (e) => {
-        let screenWidth = (50 / 100) * window.screen.width;
-        if (e.clientX > screenWidth) {
+        let screenWidth = (85 / 100) * window.screen.width;
+        if (e.clientX > screenWidth && e.clientX > 950) {
             menuIconBar1.classList.toggle("bar-1-change");
             menuIconBar2.classList.toggle("bar-2-change");
             menuIconBar3.classList.toggle("bar-3-change");

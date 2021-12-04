@@ -21,7 +21,7 @@
 }
 .prizes-container {
     display: flex;
-    gap: 8%;
+    padding: 2.5rem;
 }
 .prizes-content-container {
     width: 100%;
@@ -29,88 +29,8 @@
     flex-direction: column;
     gap: 8rem;
     align-items: center;
-    justify-content: center;
-    /* padding:2em; */
+    /* justify-content: center; */
 }
-/* 
-.prizes-image-container {
-    width: 70%;
-    gap: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.prize-div {
-    width: 80%;
-    padding: 0;
-    border-radius: 16px;
-}
-
-.prize-div:nth-child(1):hover {
-    background: linear-gradient(
-        180deg,
-        rgba(196, 196, 196, 0) 50%,
-        #878787 100%
-    );
-}
-.prize-div:nth-child(2):hover {
-    background: linear-gradient(
-        180deg,
-        rgba(196, 196, 196, 0) 50%,
-        #ffb701 130.59%
-    );
-}
-.prize-div:nth-child(3):hover {
-    background: linear-gradient(
-        180deg,
-        rgba(196, 196, 196, 0) 50%,
-        #ab6803 100%
-    );
-}
-.prize-div:hover .prize-desc-span {
-    opacity: 1;
-}
-.prize-div h1,
-.prize-div span {
-    display: inline;
-}
-
-.prize-div h1 {
-    font-size: 2em;
-    font-weight: 500;
-}
-
-.prize-div span {
-    padding: 0.5em;
-    font-weight: 300;
-    opacity: 0.5;
-}
-.prize-div img {
-    width: 100%;
-    align-self: center;
-}
-
-.prize-desc-div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
-
-.prize-desc-div h1,
-.prize-desc-div span {
-    color: white;
-} */
-
-/* For highlighter */
-/* .prize-desc-highlighter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-} */
 
 .prizes-image-container {
     width: 80%;
@@ -186,6 +106,7 @@
 .prize-desc-div h1,
 .prize-desc-div span {
     color: white;
+    text-align: center;
 }
 
 /* .secondPrize {

@@ -53,13 +53,11 @@
 
 .contact-image-row2-container h1 {
     color: #1579d6;
+    padding-bottom: 1em;
 }
 .contact-image-row2-container span {
     color: white;
     padding-bottom: 0.2em;
-}
-.contact-image-row2-container h1 {
-    padding-bottom: 1em;
 }
 
 .contact-desc-info {
