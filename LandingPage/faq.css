@@ -29,13 +29,13 @@
 .faq-content-container {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 8rem;
     justify-content: center;
     align-items: center;
 }
 
 .faq-image-container {
-    height: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +57,7 @@
     padding-bottom: 0em;
     /* padding-bottom: 1.75em; */
     z-index: -1;
+    transition: all 300ms ease;
 }
 
 .faq-desc-text {
@@ -73,6 +74,7 @@
     padding-left: 1em;
     z-index: -1;
     display: none;
+    transition: all 300ms ease;
 }
 
 .faq-desc-text-change {
@@ -82,11 +84,13 @@
     padding-left: 1em;
     z-index: -1;
     display: block;
+    transition: all 300ms ease;
 }
 .faq-desc-container-change {
     padding-bottom: 1.75em;
     display: flex;
     z-index: -1;
+    transition: all 300ms ease;
 }
 
 /* .active {

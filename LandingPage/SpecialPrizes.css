@@ -40,14 +40,12 @@
     flex-direction: column;
     gap: 3rem;
 }
-.special-image-row1-container {
-    display: flex;
-    gap: 10rem;
-}
+.special-image-row1-container,
 .special-image-row2-container {
     display: flex;
     gap: 10rem;
 }
+
 .special-card-container {
     /* background: #111; */
     width: 250px;
@@ -115,4 +113,13 @@
 .special-card-container:hover .special-desc-div-front {
     opacity: 1;
     transform: translateY(0px);
+}
+
+/* Responsivity */
+
+@media only screen and (max-width: 1250px) {
+    .special-image-row1-container,
+    .special-image-row2-container {
+        gap: 8rem;
+    }
 }
