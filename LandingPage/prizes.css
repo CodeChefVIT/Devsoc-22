@@ -33,7 +33,7 @@
 }
 
 .prizes-image-container {
-    width: 80%;
+    width: 70%;
     gap: 2.5rem;
     display: flex;
     justify-content: center;
@@ -109,6 +109,17 @@
     text-align: center;
 }
 
-/* .secondPrize {
-    margin-right: 50px;
-} */
+@media only screen and (max-width: 1200px) {
+    .prizes-image-container {
+        padding: 50px 20px;
+        width: 90%;
+        gap: 2.5rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .prizes-image-container {
+        padding: 50px 20px;
+        width: 110%;
+        gap: 2.5rem;
+    }
+}

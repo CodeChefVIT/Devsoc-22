@@ -55,11 +55,13 @@
     align-self: center;
 }
 
-/* @keyframes anim {
-    from {
-        opacity: 0;
+@media only screen and (max-width: 800px) {
+    .about-content-container {
+        width: 50%;
+        margin-left: 6%;
     }
-    to {
-        opacity: 1;
+    .about-image-container {
+        width: 50%;
+        margin-left: 6%;
     }
-} */
+}

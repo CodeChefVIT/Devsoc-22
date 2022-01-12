@@ -32,7 +32,7 @@
 }
 
 .tracks-image-container img {
-    width: 18%;
+    width: 16%;
     display: inline;
 }
 
@@ -42,4 +42,19 @@
     justify-content: center;
     align-items: center;
     /* gap: 8rem; */
+}
+@media only screen and (max-width: 1200px) {
+    .tracks-image-container {
+        padding-top: 8%;   
+    }
+    .tracks-image-container img {
+        width: 22%;
+        display: inline;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .tracks-image-container img {
+        width: 30%;
+        display: inline;
+    }
 }

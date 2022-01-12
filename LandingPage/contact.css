@@ -72,3 +72,21 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 1200px) {
+    .contact-image-container {
+        margin-top: 45px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .contact-image-row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-image-row1-container img {
+        width: 32px;
+    }
+
+}

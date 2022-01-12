@@ -59,6 +59,19 @@ $ yarn serve
 			</p>
 		</td>
 	</tr>
+	<tr align="center" style="font-weight:bold">
+		<td>
+		Sidharth Mishra
+		<p align="center">
+			<img src = "https://miro.medium.com/fit/c/262/262/1*jdpyoiqJ-lTNg5gpKxgBvw.jpeg" width="150" height="150" alt="Sidharth Mishra">
+		</p>
+			<p align="center">
+				<a href = "https://github.com/SidharthMishra-07">
+					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
+				</a>
+			</p>
+		</td>
+	</tr>
 </table>
 
 ## License

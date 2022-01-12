@@ -93,6 +93,8 @@
     transition: all 300ms ease;
 }
 
-/* .active {
-    display: none;
-} */
+@media only screen and (max-width: 1200px) {
+    .faq-image-container {
+        margin-top: 30px;
+    }
+}
