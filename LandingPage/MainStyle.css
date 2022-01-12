@@ -52,7 +52,7 @@ body {
 /* Titles */
 .section-title {
     color: #fff;
-    font-size: 96px;
+    font-size: 85px;
     font-weight: 900;
     position: relative;
     opacity: 1;
@@ -274,7 +274,7 @@ body {
 .scrollsvg {
     position: absolute;
     bottom: 100px;
-    right: -60px;
+    right: -280px;
 }
 
 /* @media only screen and (max-width: 1000px) {
