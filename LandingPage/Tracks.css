@@ -43,3 +43,12 @@
     align-items: center;
     /* gap: 8rem; */
 }
+@media only screen and (max-width: 1000px) {
+    .tracks-image-container {
+        padding-top: 8%;   
+    }
+    .tracks-image-container img {
+        width: 22%;
+        display: inline;
+    }
+}

@@ -60,3 +60,9 @@
 .bottom-stick-images {
     margin-bottom: 5rem;
 }
+
+@media only screen and (max-width: 1000px) {
+    .showcase marquee {
+        width: 55%;
+    }
+}
