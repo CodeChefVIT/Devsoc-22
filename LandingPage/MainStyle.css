@@ -276,18 +276,33 @@ body {
     bottom: 100px;
     right: -280px;
 }
-
-/* @media only screen and (max-width: 1000px) {
-    .main-container {
-        flex-direction: column;
+@media only screen and (max-width: 1150px) {
+    .title {
+        color: #fff;
+        font-size: 120px;
+        font-weight: 800;
     }
-    #Home {
-        min-width: 100%;
+    .hero {
+        margin: 13% 0 0 21%;
     }
-    #About {
-        min-width: 100%;
+}
+@media only screen and (max-width: 900px) {
+    .title {
+        color: #fff;
+        font-size: 100px;
+        font-weight: 800;
     }
-    #Prizes {
-        min-width: 100%;
+    .hero {
+        margin: 13% 0 0 25%;
     }
-} */
+}
+@media only screen and (max-width: 800px) {
+    .title {
+        color: #fff;
+        font-size: 85px;
+        font-weight: 800;
+    }
+    .hero {
+        margin: 15% 0 0 28% ;
+    }
+}

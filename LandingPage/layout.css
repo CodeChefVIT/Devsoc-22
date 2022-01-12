@@ -37,10 +37,6 @@
         gap: 8rem;
         padding-left: 3rem;
     }
-    .title {
-        font-size: 120px;
-    }
-
     .subTitle {
         font-size: 32px;
     }
@@ -87,13 +83,13 @@
         overflow-x: hidden;
         height: 100%;
     }
-    .hero {
+    /* .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 12% 0 0 21%;
         position: relative;
-    }
+    } */
 
     .section {
         height: 100% !important;
@@ -188,3 +184,110 @@
         font-size: 1em;
     }
 }
+@media only screen and (max-width: 900px) {
+    .special-image-container {
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .special-card-container {
+        width: 180px;
+        height: 150px;
+        border-radius: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    .special-image-container {
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .special-card-container {
+        width: 150px;
+        height: 160px;
+        border-radius: 16px;
+    }
+    .showcase marquee {
+        padding: 20px 15px;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 700px) {
+        .title {
+            color: #fff;
+            font-size: 70px;
+            font-weight: 800;
+        }
+        .hero {
+            margin: 16% 0 0 25% ;
+        }
+
+        .tracks-image-container img {
+            width: 30%;
+            display: inline;
+        }
+
+        .prizes-image-container {
+            margin-left: 90px;
+            width: 80%;
+            gap: 2.5rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        .special-image-row1-container,
+        .special-image-row2-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .special-image-container {
+            padding: 5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .special-card-container {
+            width: 280px;
+            height: 250px;
+            border-radius: 16px;
+        }
+
+        .showcase marquee {
+            padding: 20px 15px;
+            width: 80%;
+        }
+
+        .faq-image-container {
+            width: 90%;
+        }
+
+        .contact-image-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+}
+@media only screen and (max-width: 650px) {
+    .section-title{
+        color: #fff;
+        font-size: 55px;
+        font-weight: 900;
+    }
+    .title {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .hero {
+        margin: 16% 0 0 21% ;
+    }
+
+}
+
+

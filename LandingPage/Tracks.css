@@ -52,3 +52,9 @@
         display: inline;
     }
 }
+@media only screen and (max-width: 800px) {
+    .tracks-image-container img {
+        width: 30%;
+        display: inline;
+    }
+}

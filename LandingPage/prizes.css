@@ -116,3 +116,10 @@
         gap: 2.5rem;
     }
 }
+@media only screen and (max-width: 800px) {
+    .prizes-image-container {
+        padding: 50px 20px;
+        width: 110%;
+        gap: 2.5rem;
+    }
+}
