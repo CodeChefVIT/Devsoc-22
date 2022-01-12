@@ -32,7 +32,7 @@
 }
 
 .tracks-image-container img {
-    width: 18%;
+    width: 16%;
     display: inline;
 }
 
@@ -43,7 +43,7 @@
     align-items: center;
     /* gap: 8rem; */
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .tracks-image-container {
         padding-top: 8%;   
     }

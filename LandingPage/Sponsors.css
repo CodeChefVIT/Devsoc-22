@@ -28,9 +28,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .showcase marquee {
     width: 35%;
+    padding: 20px 0px;
     background: radial-gradient(
         89.9% 89.9% at 50% 50%,
         #498dff 0%,
@@ -47,8 +49,12 @@
     margin-bottom: 5rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+    .showcase {
+        margin-top: 30px;
+    }
     .showcase marquee {
+        padding: 20px 15px;
         width: 55%;
     }
 }

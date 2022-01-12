@@ -72,3 +72,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 1200px) {
+    .contact-image-container {
+        margin-top: 45px;
+    }
+}
