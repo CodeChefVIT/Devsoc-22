@@ -75,7 +75,7 @@
 
 @media only screen and (max-width: 1200px) {
     .contact-image-container {
-        margin-top: 45px;
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -88,5 +88,4 @@
     .contact-image-row1-container img {
         width: 32px;
     }
-
 }

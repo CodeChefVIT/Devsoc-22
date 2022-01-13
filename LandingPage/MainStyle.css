@@ -30,24 +30,30 @@ body {
 
 /*ScrollBar*/
 
-::-webkit-scrollbar {
+.main-container::-webkit-scrollbar {
     width: 11px;
     cursor: pointer;
 }
 
-::-webkit-scrollbar-track {
+.main-container::-webkit-scrollbar-track {
     border-radius: 5px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
     background-color: black;
 }
 
-::-webkit-scrollbar-thumb {
+.main-container::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: rgba(19, 129, 230, 0.8);
 }
 
 .section {
     transition: all 300ms ease;
+
+    overflow: hidden;
+}
+.padding-container {
+    width: 100%;
+    padding: 2.5rem;
 }
 /* Titles */
 .section-title {
@@ -163,9 +169,21 @@ body {
     border-right: 1px solid #1579d6;
 }
 
+.vertical-menu-icon-container-change {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 21rem;
+    margin-left: 20px;
+}
+
+.hide-it {
+    display: none !important;
+}
+
 .sidebar-sections-container {
     display: none;
-    transition: all 400ms ease;
 }
 .sidebar-sections-container-change {
     display: flex;
@@ -275,34 +293,4 @@ body {
     position: absolute;
     bottom: 100px;
     right: -280px;
-}
-@media only screen and (max-width: 1150px) {
-    .title {
-        color: #fff;
-        font-size: 120px;
-        font-weight: 800;
-    }
-    .hero {
-        margin: 13% 0 0 21%;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .title {
-        color: #fff;
-        font-size: 100px;
-        font-weight: 800;
-    }
-    .hero {
-        margin: 13% 0 0 25%;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .title {
-        color: #fff;
-        font-size: 85px;
-        font-weight: 800;
-    }
-    .hero {
-        margin: 15% 0 0 28% ;
-    }
 }

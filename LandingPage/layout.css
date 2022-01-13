@@ -21,7 +21,7 @@
         padding-left: 2.5rem;
     }
     .about-image-container img {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -83,36 +83,142 @@
         overflow-x: hidden;
         height: 100%;
     }
-    /* .hero {
+    .main-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main-container section {
+        height: 100%;
+        min-height: 100%;
+        min-width: 100% !important;
+    }
+    .section {
+        margin-top: 20%;
+    }
+
+    #Home {
+        height: 100vh;
+    }
+    .hero {
+        margin-top: 30vh;
+    }
+
+    .padding-container,
+    .prizes-container {
+        padding: 0rem;
+
+        height: 100%;
+    }
+
+    .cursor,
+    .inner-circle,
+    .inner-circle-change,
+    .cursor-change {
+        display: none;
+    }
+
+    .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 12% 0 0 21%;
+        margin: 20% auto 0 auto;
         position: relative;
-    } */
-
-    .section {
-        height: 100% !important;
-        margin-top: 10%;
-        min-width: 100% !important;
     }
+
+    .sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+        border-right: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sidebar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 32px;
+    }
+    .sidebarImg {
+        padding-top: 0px;
+    }
+
+    .vertical-menu-icon-container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin-top: 0px;
+        margin-left: 50%;
+    }
+    .vertical-menu-icon-container-change {
+        position: absolute;
+        margin-top: 4rem;
+        margin-left: 45rem;
+    }
+    .vertical-menu-icon {
+        height: 3px;
+        background-color: white;
+        transition: all 400ms ease-in-out;
+    }
+    .bar-1 {
+        width: 40px;
+        margin-top: 0px;
+    }
+
+    .bar-2 {
+        width: 52px;
+        opacity: 1;
+        transition: opacity 800ms ease-in-out;
+    }
+
+    .bar-3 {
+        width: 48px;
+    }
+
+    .sidebar-change {
+        width: 100%;
+        height: 100vh;
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+        border-right: 1px solid #1579d6;
+    }
+
+    .socials {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        border: none;
+        margin-left: 80%;
+        bottom: 40%;
+    }
+    .socials a:hover {
+        background-color: transparent;
+    }
+
+    #About {
+        min-width: 100%;
+    }
+
     .about-container {
         flex-direction: column;
         align-items: center;
+        padding-left: 0px;
         gap: 3rem;
-        padding-left: 4rem;
     }
     .about-content-container {
-        width: 80%;
+        width: 100%;
     }
-    .tracks-container {
-        padding-left: 8rem;
+    .about-image-container {
+        width: 100%;
     }
-    .prizes-container {
-        padding-left: 8rem;
+    .about-image-container img {
+        width: 100%;
     }
+
     .prize-div {
         padding: 20px;
+        margin-bottom: 10px;
     }
     .prize-div h1 {
         font-size: 1.25em;
@@ -127,9 +233,6 @@
         padding: 1em 0em 0em 0em;
     }
 
-    .special-container {
-        padding-left: 8rem;
-    }
     .special-image-row1-container,
     .special-image-row2-container {
         display: flex;
@@ -150,26 +253,16 @@
         font-size: 0.75em;
         padding: 0 0.4em;
     }
-    .timeline-container {
-        padding-left: 8rem;
-    }
 
     .timeline-image-container p {
         margin-top: 1em;
         font-size: 2em;
     }
-    .sponsor-container {
-        padding-left: 8rem;
-    }
-    .faq-container {
-        padding-left: 8rem;
-    }
+
     .faq-image-container {
         height: 300px;
     }
-    .contact-container {
-        padding-left: 8rem;
-    }
+
     .contact-image-row1-container,
     .contact-image-row2-container {
         gap: 5rem;
@@ -185,6 +278,27 @@
     }
 }
 @media only screen and (max-width: 900px) {
+    .title {
+        color: #fff;
+        font-size: 120px;
+        font-weight: 800;
+    }
+    .blue {
+        color: #1579d6;
+    }
+    .subTitle {
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: 700;
+        padding: 8px 0;
+    }
+    .subTitle2 {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 120px 0 32px 0;
+    }
+
     .special-image-container {
         padding: 5rem 0;
         display: flex;
@@ -196,8 +310,39 @@
         height: 150px;
         border-radius: 16px;
     }
+    .contact-content-container {
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .faq-desc-text {
+        font-size: 1.25em;
+    }
+    .faq-desc-text-change {
+        font-size: 0.9em;
+    }
+    .faq-plus-svg {
+        width: 16px;
+    }
 }
 @media only screen and (max-width: 800px) {
+    .socials {
+        display: none;
+    }
+    .vertical-menu-icon-container {
+        margin-left: 89%;
+    }
+
+    .prizes-image-container {
+        width: 90%;
+        gap: 2.5rem;
+    }
+
+    .prize-div {
+        width: 80%;
+        padding: 30px;
+    }
 
     .special-image-container {
         padding: 5rem 0;
@@ -210,84 +355,265 @@
         height: 160px;
         border-radius: 16px;
     }
+    .special-title {
+        font-size: 1em;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+
+    .special-text {
+        font-size: 0.7em;
+        opacity: 0.9;
+    }
     .showcase marquee {
         padding: 20px 15px;
         width: 80%;
     }
 }
-@media only screen and (max-width: 700px) {
-        .title {
-            color: #fff;
-            font-size: 70px;
-            font-weight: 800;
-        }
-        .hero {
-            margin: 16% 0 0 25% ;
-        }
 
-        .tracks-image-container img {
-            width: 30%;
-            display: inline;
-        }
+@media only screen and (max-width: 740px) {
+    .prize-div h1 {
+        font-size: 1em;
+    }
 
-        .prizes-image-container {
-            margin-left: 90px;
-            width: 80%;
-            gap: 2.5rem;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-    
-        .special-image-row1-container,
-        .special-image-row2-container {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-        
-        .special-image-container {
-            padding: 5rem 0;
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-        }
-        .special-card-container {
-            width: 280px;
-            height: 250px;
-            border-radius: 16px;
-        }
-
-        .showcase marquee {
-            padding: 20px 15px;
-            width: 80%;
-        }
-
-        .faq-image-container {
-            width: 90%;
-        }
-
-        .contact-image-container {
-            display: flex;
-            flex-direction: column;
-            gap: 6rem;
-        }
+    .prize-div span {
+        font-size: 0.6em;
+    }
+    .prize-div {
+        padding: 10px;
+        padding-top: 20px;
+    }
 }
-@media only screen and (max-width: 650px) {
-    .section-title{
-        color: #fff;
-        font-size: 55px;
-        font-weight: 900;
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 100px;
+    }
+    .sidebar-sections-span {
+        font-size: 2em;
+        padding: 0.75rem;
+    }
+    .sidebar-sections-container-change {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4em;
+    }
+
+    .subTitle {
+        font-size: 28px;
+    }
+    .subTitle2 {
+        font-size: 20px;
+    }
+    .Regbtn {
+        font-size: 16px;
+        width: 140px;
+        height: 48px;
+    }
+    .Regbtn:hover {
+        font-size: 14px;
+    }
+    .section-title {
+        font-size: 48px;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .faq-desc-text {
+        font-size: 1em;
+    }
+    .faq-desc-text-change {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .special-card-container {
+        width: 130px;
+        height: 140px;
+    }
+    .special-card-container img {
+        width: 50%;
+    }
+    .special-title {
+        font-size: 0.8em;
+    }
+
+    .special-text {
+        font-size: 0.5em;
+    }
+    .prizes-content-container {
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .section-title {
+        font-size: 36px;
+    }
+    .section-title::after {
+        height: 5px;
     }
     .title {
-        color: #fff;
-        font-size: 60px;
-        font-weight: 800;
-    }
-    .hero {
-        margin: 16% 0 0 21% ;
+        font-size: 80px;
     }
 
+    .subTitle {
+        font-size: 24px;
+    }
+    .subTitle2 {
+        font-size: 16px;
+    }
+
+    .about-content {
+        font-size: 16px;
+    }
+    .contact-image-row1-container img {
+        width: 32px;
+    }
+    .contact-image-container {
+        gap: 3rem;
+    }
 }
 
+@media only screen and (max-width: 520px) {
+    .hero {
+        margin-top: 25%;
+    }
+    .vertical-menu-icon-container {
+        margin-left: 85%;
+    }
+    .sidebar-sections-span {
+        font-size: 1.6em;
+        padding: 0.75rem;
+    }
+    .sidebar-sections-container-change {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
 
+    .special-card-container {
+        width: 120px;
+        height: 120px;
+    }
+    .special-card-container img {
+        width: 50%;
+    }
+    .special-title {
+        font-size: 0.6em;
+    }
+
+    .special-text {
+        font-size: 0.4em;
+    }
+    .special-image-row1-container,
+    .special-image-row2-container {
+        display: flex;
+        gap: 1rem;
+    }
+    .prizes-image-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prize-div img {
+        width: 60%;
+    }
+    .prize-div h1 {
+        font-size: 1.5em;
+    }
+
+    .prize-div span {
+        font-size: 1em;
+    }
+    .prize-div {
+        width: 70%;
+        padding: 5px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .title {
+        font-size: 64px;
+    }
+
+    .subTitle {
+        font-size: 20px;
+    }
+    .subTitle2 {
+        font-size: 14px;
+    }
+    .Regbtn {
+        font-size: 14px;
+        width: 120px;
+        height: 38px;
+    }
+    .Regbtn:hover {
+        font-size: 12px;
+    }
+    .prizes-image-container {
+        width: 90%;
+        gap: 1.5rem;
+    }
+    .faq-desc-text {
+        font-size: 0.8em;
+    }
+    .faq-desc-text-change {
+        font-size: 0.6em;
+    }
+    .contact-image-row1-container,
+    .contact-image-row2-container {
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero {
+        margin-top: 30vh;
+    }
+    .special-card-container {
+        width: 110px;
+        height: 120px;
+    }
+    .special-card-container img {
+        width: 50%;
+    }
+    .special-image-row1-container,
+    .special-image-row2-container {
+        gap: 0.75rem;
+    }
+    .special-title {
+        font-size: 0.8em;
+    }
+
+    .special-text {
+        font-size: 0.5em;
+    }
+}
+
+/* Devices */
+
+@media only screen and (max-width: 420px) and (min-height: 880px) {
+    .hero {
+        margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 830px) and (min-height: 1170px) {
+    .hero {
+        margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-height: 1020px) {
+    .hero {
+        margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 920px) and (min-height: 1360px) {
+    .hero {
+        margin-top: 30vh;
+    }
+}

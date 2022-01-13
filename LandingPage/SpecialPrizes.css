@@ -109,18 +109,11 @@
 
 .special-text {
     opacity: 0.9;
+
 }
 .special-card-container:hover .special-desc-div-front {
     opacity: 1;
     transform: translateY(0px);
 }
 
-/* Responsivity */
-
-@media only screen and (max-width: 1250px) {
-    .special-image-row1-container,
-    .special-image-row2-container {
-        gap: 8rem;
-    }
-}
 

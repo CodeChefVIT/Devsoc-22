@@ -13,16 +13,13 @@
     z-index: -1;
 }
 
-.tracks-container {
-    width: 100%;
-    padding: 2.5rem;
-}
 .tracks-content-container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
 }
 
 .tracks-image-container {
@@ -42,19 +39,4 @@
     justify-content: center;
     align-items: center;
     /* gap: 8rem; */
-}
-@media only screen and (max-width: 1200px) {
-    .tracks-image-container {
-        padding-top: 8%;   
-    }
-    .tracks-image-container img {
-        width: 22%;
-        display: inline;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .tracks-image-container img {
-        width: 30%;
-        display: inline;
-    }
 }
