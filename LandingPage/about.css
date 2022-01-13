@@ -22,6 +22,7 @@
 .about-container {
     display: flex;
     gap: 10rem;
+ 
 }
 
 .about-content-container {
@@ -53,15 +54,4 @@
     width: 100%;
     border-radius: 8px;
     align-self: center;
-}
-
-@media only screen and (max-width: 800px) {
-    .about-content-container {
-        width: 50%;
-        margin-left: 6%;
-    }
-    .about-image-container {
-        width: 50%;
-        margin-left: 6%;
-    }
 }

@@ -7,7 +7,9 @@ const sidebarMenu = document.querySelector(".sidebar-sections-container");
 const sidebarMenuSpan = document.querySelectorAll(".sidebar-sections-span");
 const sidebarMenuLi = document.querySelectorAll(".sidebar-sections-li");
 const section = document.querySelectorAll(".section");
-
+const codechefImg = document.querySelector(".sidebarImg");
+const verticalMenu = document.querySelector(".vertical-menu-icon-container");
+const socials = document.querySelector(".socials");
 // For open/close of sidebar menu
 
 menuIcon.addEventListener("click", (e) => {
@@ -17,7 +19,10 @@ menuIcon.addEventListener("click", (e) => {
     sidebar.classList.toggle("sidebar-change");
     setTimeout(() => {
         sidebarMenu.classList.toggle("sidebar-sections-container-change");
-    }, 200);
+        codechefImg.classList.toggle("hide-it");
+        socials.classList.toggle("hide-it");
+        verticalMenu.classList.toggle("vertical-menu-icon-container-change");
+    }, 250);
 });
 
 section.forEach((item) => {
@@ -53,6 +58,11 @@ sidebarMenuSpan.forEach((item) => {
         sidebar.classList.toggle("sidebar-change");
         setTimeout(() => {
             sidebarMenu.classList.toggle("sidebar-sections-container-change");
+            codechefImg.classList.toggle("hide-it");
+            socials.classList.toggle("hide-it");
+            verticalMenu.classList.toggle(
+                "vertical-menu-icon-container-change"
+            );
         }, 300);
     });
 });
