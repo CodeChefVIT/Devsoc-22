@@ -686,7 +686,7 @@
     }
 }
 
-@media only screen and (max-width: 1030px) and (height: 600px) {
+@media only screen and (min-width: 1020px) and (min-height: 600px) {
     .hero {
         margin-top: 10vh;
     }
