@@ -621,6 +621,44 @@
         font-size: 0.5em;
     }
 }
+@media only screen and (max-width: 360px) {
+    .hero {
+        margin-top: 30vh;
+    }
+    .title {
+        font-size: 56px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+    }
+    .subTitle2 {
+        font-size: 12px;
+    }
+    .Regbtn {
+        font-size: 12px;
+        width: 100px;
+        height: 32px;
+    }
+    .special-card-container {
+        width: 90px;
+        height: 100px;
+    }
+    .special-card-container img {
+        width: 60%;
+    }
+    .special-image-row1-container,
+    .special-image-row2-container {
+        gap: 0.75rem;
+    }
+    .special-title {
+        font-size: 0.6em;
+    }
+
+    .special-text {
+        font-size: 0.4em;
+    }
+}
 
 /* Devices */
 
@@ -645,5 +683,39 @@
 @media only screen and (max-width: 920px) and (min-height: 1360px) {
     .hero {
         margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 1030px) and (max-height: 700px) {
+    .hero {
+        margin-top: 10vh;
+    }
+    .special-card-container {
+        width: 160px;
+        height: 170px;
+    }
+    .special-card-container img {
+        width: 60%;
+    }
+    .special-image-container {
+        gap: 1rem;
+    }
+    .special-image-row1-container,
+    .special-image-row2-container {
+        gap: 3rem;
+    }
+    .special-title {
+        font-size: 0.75em;
+    }
+
+    .special-text {
+        font-size: 0.7em;
+    }
+    .vertical-menu-icon-container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin-top: 13rem;
     }
 }
