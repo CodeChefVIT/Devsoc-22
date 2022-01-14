@@ -53,6 +53,27 @@
     .section-title {
         font-size: 56px;
     }
+    .title {
+        color: #fff;
+        font-size: 120px;
+        font-weight: 800;
+    }
+    .blue {
+        color: #1579d6;
+    }
+    .subTitle {
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: 700;
+        padding: 8px 0;
+    }
+    .subTitle2 {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 120px 0 32px 0;
+    }
+
     .special-image-row1-container,
     .special-image-row2-container {
         gap: 5rem;
@@ -97,6 +118,9 @@
     }
 
     #Home {
+        height: 100vh;
+    }
+    #Home::before {
         height: 100vh;
     }
     .hero {
@@ -427,6 +451,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .hero {
+        margin-top: 30vh;
+    }
     .special-card-container {
         width: 130px;
         height: 140px;
@@ -447,6 +474,9 @@
 }
 
 @media only screen and (max-width: 560px) {
+    .hero {
+        margin-top: 30vh;
+    }
     .section-title {
         font-size: 36px;
     }
@@ -476,9 +506,6 @@
 }
 
 @media only screen and (max-width: 520px) {
-    .hero {
-        margin-top: 25%;
-    }
     .vertical-menu-icon-container {
         margin-left: 85%;
     }
@@ -531,6 +558,9 @@
         width: 70%;
         padding: 5px;
         padding-top: 20px;
+    }
+    .faq-content-container {
+        gap: 3rem;
     }
 }
 @media only screen and (max-width: 450px) {
