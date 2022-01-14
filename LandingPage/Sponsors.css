@@ -3,8 +3,9 @@
 }
 #Sponsors::before {
     content: "";
-    background: url("/Images/Background/BgImg-8.png");
-    opacity: 0.4;
+    background-color: #0f1114;
+
+    opacity: 0.8;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -33,11 +34,7 @@
 .showcase marquee {
     width: 35%;
     padding: 20px 0px;
-    background: radial-gradient(
-        89.9% 89.9% at 50% 50%,
-        #498dff 0%,
-        rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     border-radius: 48px;
 }
 
