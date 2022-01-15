@@ -12,8 +12,12 @@
 
 #About::before {
     content: "";
-    background-color: #0f1114;
-    opacity: 0.8;
+    /* background-color: #0f1114; */
+    background: url("/Images/Background/BgImg.svg");
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center;
+    rotate: 180deg;
     position: absolute;
     min-width: 120%;
     height: 100%;
