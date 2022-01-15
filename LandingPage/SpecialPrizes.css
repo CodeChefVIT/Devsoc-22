@@ -13,11 +13,12 @@
 
 #SpecialPrizes::before {
     content: "";
-    background: url("/Images/Background/BgImg-5.png");
-    opacity: 0.8;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("/Images/Background/BgImg.svg");
+    rotate: 180deg;
+    opacity: 0.4;
     position: absolute;
+    background-position: center;
+    background-size: cover;
     min-width: 100%;
     height: 100%;
     z-index: -1;

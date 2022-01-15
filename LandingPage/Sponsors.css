@@ -3,9 +3,9 @@
 }
 #Sponsors::before {
     content: "";
-    background-color: #0f1114;
-
-    opacity: 0.8;
+    background: url("/Images/Background/BgImg.svg");
+    /* rotate: 180deg; */
+    opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -34,7 +34,19 @@
 .showcase marquee {
     width: 35%;
     padding: 20px 0px;
-    background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    /* background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%); */
+    background: #4ca1af; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #3185d3,
+        #1579d6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #3185d3,
+        #1579d6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border-radius: 48px;
 }
 

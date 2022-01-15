@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: #0f1114;
+    background: #0d0e10;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -84,9 +84,9 @@ body {
 }
 #Home::before {
     content: "";
-    background: url("/Images/BgImg-1.jpg");
-    background-color: #0f1114;
-    opacity: 0.7;
+    background: url("/Images/Background/BgImg.svg");
+    /* background-color: #0f1114; */
+    opacity: 0.5;
     background-size: cover;
     background-position: center;
     position: absolute;

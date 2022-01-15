@@ -12,12 +12,14 @@
 
 #Prizes::before {
     content: "";
-    background-color: #0f1114;
+    /* background-color: #0f1114; */
+    background: url("/Images/Background/BgImg.svg");
+    rotate: 180deg;
     position: absolute;
     background-position: center;
     background-size: cover;
-    opacity: 0.8;
     min-width: 100%;
+    opacity: 0.5;
     height: 100%;
     z-index: -1;
 }
