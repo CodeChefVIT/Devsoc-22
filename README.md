@@ -50,7 +50,7 @@ $ yarn serve
 		<td>
 		Nitish Kumar Bansal
 		<p align="center">
-			<img src = "https://photos.app.goo.gl/2SouKca5A96WFa3j8" width="150" height="150" alt="Nitish Kumar Bansal">
+			<img src = "https://photos.app.goo.gl/dtoWLcxB9uK1vX3v9" width="150" height="150" alt="Nitish Kumar Bansal">
 		</p>
 			<p align="center">
 				<a href = "https://github.com/nitishbansal32">
